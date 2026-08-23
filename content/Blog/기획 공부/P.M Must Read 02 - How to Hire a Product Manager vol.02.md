@@ -4,69 +4,111 @@ date: 2024-02-25
 publish: true
 ---
 
-<p data-ke-size="size16"><span>이전 글&nbsp;</span></p>
-<p data-ke-size="size16"><span><a href="https://nevermind22.tistory.com/25" target="_blank" rel="noopener&nbsp;noreferrer">https://nevermind22.tistory.com/25</a></span></p>
-<figure id="og_1708840955619" contenteditable="false" data-ke-type="opengraph" data-ke-align="alignCenter" data-og-type="article" data-og-title="P.M Must Read 02 : How to Hire a Product Manager vol.01" data-og-description="오늘 번역할 글은 이미 테크 씬에서 너무 유명한 명불허전 Ken Norton의 가장 유명한 에세이인 How to hire a product manager&quot; 입니다. 구글에서 PM 으로 근무하면서 우리가 현재 쓰고있는 Google Docs, Google Cal" data-og-host="nevermind22.tistory.com" data-og-source-url="https://nevermind22.tistory.com/25" data-og-url="https://nevermind22.tistory.com/25" data-og-image="https://blog.kakaocdn.net/dna/JPJuB/hyVmSsExUL/AAAAAAAAAAAAAAAAAAAAAPn13foed9OkQWjyrLAFWqvkvz7HfHIg9wYKdcAQg8HM/img.gif?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=Bpw4vHkhstpIJDGEoq5Lt61EtcY%3D"><a href="https://nevermind22.tistory.com/25" target="_blank" rel="noopener" data-source-url="https://nevermind22.tistory.com/25">
-<div class="og-image" style="background-image: url('https://blog.kakaocdn.net/dna/JPJuB/hyVmSsExUL/AAAAAAAAAAAAAAAAAAAAAPn13foed9OkQWjyrLAFWqvkvz7HfHIg9wYKdcAQg8HM/img.gif?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=Bpw4vHkhstpIJDGEoq5Lt61EtcY%3D');">&nbsp;</div>
-<div class="og-text">
-<p class="og-title" data-ke-size="size16">P.M Must Read 02 : How to Hire a Product Manager vol.01</p>
-<p class="og-desc" data-ke-size="size16">오늘 번역할 글은 이미 테크 씬에서 너무 유명한 명불허전 Ken Norton의 가장 유명한 에세이인 How to hire a product manager" 입니다. 구글에서 PM 으로 근무하면서 우리가 현재 쓰고있는 Google Docs, Google Cal</p>
-<p class="og-host" data-ke-size="size16">nevermind22.tistory.com</p>
-</div>
-</a></figure>
-<p data-ke-size="size16"><span>3. 제품에 대한 본능적 직관과 창의성</span></p>
-<p><figure class="imageblock alignLeft" data-ke-mobileStyle="widthOrigin" data-origin-width="480" data-origin-height="283"><span data-url="https://blog.kakaocdn.net/dna/WyApZ/btsFgKw0pf3/AAAAAAAAAAAAAAAAAAAAABa6v_gpjhlqEnISBZJ0DahjLaFjQc_0URxBVLODl3nZ/img.gif?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=nZZxNftf6krj6KaRgK5X4ypTd%2Fg%3D" data-phocus="https://blog.kakaocdn.net/dna/WyApZ/btsFgKw0pf3/AAAAAAAAAAAAAAAAAAAAABa6v_gpjhlqEnISBZJ0DahjLaFjQc_0URxBVLODl3nZ/img.gif?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=nZZxNftf6krj6KaRgK5X4ypTd%2Fg%3D" data-alt="과연 직관은 대체 불가능한가.."><img src="../../Attachments/Tistory/26-01.gif" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="480" height="283" data-origin-width="480" data-origin-height="283"/></span><figcaption>과연 직관은 대체 불가능한가..</figcaption>
-</figure>
-</p>
-<p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16"><span>제품에&nbsp;대한&nbsp;본능적&nbsp;직관과&nbsp;창의성은&nbsp;매우&nbsp;주관적이며&nbsp;평가하기&nbsp;어려운&nbsp;분야입니다.&nbsp;하지만&nbsp;이것은&nbsp;매우&nbsp;중요합니다.&nbsp;저는&nbsp;제품에&nbsp;대한&nbsp;직관이&nbsp;천성적으로&nbsp;있는&nbsp;특정한&nbsp;사람들이&nbsp;있다고&nbsp;굳게&nbsp;믿고&nbsp;있습니다.&nbsp;이런&nbsp;사람들은&nbsp;마치&nbsp;본능적으로&nbsp;훌륭한&nbsp;제품을&nbsp;만드는&nbsp;방법을&nbsp;알고&nbsp;있습니다.&nbsp;비록&nbsp;그들의&nbsp;직감이&nbsp;항상&nbsp;정확한&nbsp;것은&nbsp;아니지만,&nbsp;대체로&nbsp;올바른&nbsp;방향을&nbsp;가리킵니다.&nbsp;그들은&nbsp;특정&nbsp;관점을&nbsp;열정적으로&nbsp;지지하는&nbsp;경향이&nbsp;있으며,&nbsp;이는&nbsp;가끔&nbsp;동료들&nbsp;사이에&nbsp;안타까움을&nbsp;불러일으키기도&nbsp;합니다.&nbsp;저는&nbsp;이러한&nbsp;특성을&nbsp;가진&nbsp;사람들과&nbsp;일할&nbsp;수&nbsp;있는&nbsp;좋은&nbsp;기회를&nbsp;많이&nbsp;가졌습니다.&nbsp;이것은&nbsp;프로덕트&nbsp;매니저에게&nbsp;필수적인&nbsp;특성이며,&nbsp;조정될&nbsp;수는&nbsp;있지만&nbsp;배울&nbsp;수는&nbsp;없습니다.&nbsp;특히&nbsp;웹과&nbsp;같이&nbsp;작은&nbsp;결정이&nbsp;중요한&nbsp;매우&nbsp;다이나믹한&nbsp;환경에서&nbsp;일하는&nbsp;PM에게&nbsp;더욱&nbsp;그렇습니다.&nbsp;물론&nbsp;많은&nbsp;거시적&nbsp;전략과&nbsp;생각이&nbsp;있습니다.&nbsp;그러나&nbsp;작은&nbsp;결정이&nbsp;훌륭한&nbsp;PM과&nbsp;좋은&nbsp;PM을&nbsp;구분합니다.&nbsp;그들의&nbsp;제안이&nbsp;아무도&nbsp;생각하지&nbsp;못한&nbsp;것이지만&nbsp;듣자마자&nbsp;모두를&nbsp;사로잡는다면,&nbsp;그들이&nbsp;제품에&nbsp;대한&nbsp;직관(스파이더&nbsp;센스)를&nbsp;가지고&nbsp;있다는&nbsp;것을&nbsp;알&nbsp;수&nbsp;있습니다.&nbsp;이러한&nbsp;직관을&nbsp;인터뷰에서&nbsp;판단하는&nbsp;것은&nbsp;가장&nbsp;어렵지만,&nbsp;방법은&nbsp;있습니다.&nbsp;저는&nbsp;유일하게&nbsp;한&nbsp;시간&nbsp;동안의&nbsp;인터뷰를&nbsp;통해&nbsp;지원자가&nbsp;다음과&nbsp;같은&nbsp;문제를&nbsp;해결하는지&nbsp;지켜보는&nbsp;것입니다.</span><br /><br /><span>제품에&nbsp;대한&nbsp;문제점:</span><br /><span>좋은&nbsp;PM이라면,&nbsp;자신의&nbsp;제품에&nbsp;대해&nbsp;많은&nbsp;걱정을&nbsp;가지고&nbsp;있을&nbsp;것입니다.&nbsp;UI의&nbsp;부족한&nbsp;점,&nbsp;누락된&nbsp;기능,&nbsp;수정이&nbsp;필요한&nbsp;구조적&nbsp;결함&nbsp;등이&nbsp;그것입니다.&nbsp;이러한&nbsp;문제들은&nbsp;수정이&nbsp;필요한&nbsp;것들입니다.&nbsp;적어도&nbsp;이&nbsp;문제들&nbsp;중&nbsp;몇&nbsp;개는&nbsp;제품에&nbsp;대한&nbsp;강한&nbsp;본능을&nbsp;가진&nbsp;지적인&nbsp;외부인들이&nbsp;알아차릴&nbsp;수&nbsp;있을&nbsp;것입니다.&nbsp;저는&nbsp;인터뷰어가&nbsp;웃으며&nbsp;고개를&nbsp;끄덕이며&nbsp;"저도&nbsp;알아요,&nbsp;그건&nbsp;저를&nbsp;지금까지&nbsp;미치게&nbsp;만들어왔어요"라고&nbsp;말하는&nbsp;순간을&nbsp;기다립니다.</span><br /><br /><span>제품에&nbsp;대한&nbsp;새로운&nbsp;시각:</span><br /><span>분명히&nbsp;당신이&nbsp;고려하지&nbsp;못한&nbsp;발전&nbsp;가능성이&nbsp;있습니다.&nbsp;경쟁사에&nbsp;대한&nbsp;새로운&nbsp;아이디어,&nbsp;수정이&nbsp;필요한&nbsp;직면한&nbsp;문제&nbsp;등이&nbsp;그것입니다.&nbsp;저는&nbsp;지원자로부터&nbsp;배울&nbsp;때&nbsp;두&nbsp;가지&nbsp;경우입니다.&nbsp;1)&nbsp;비판적으로&nbsp;이야기하는&nbsp;것을&nbsp;두려워하지&nbsp;않을&nbsp;때,&nbsp;2)&nbsp;그들이&nbsp;나보다&nbsp;똑똑할&nbsp;때입니다.&nbsp;저는&nbsp;이&nbsp;두&nbsp;가지를&nbsp;PM으로&nbsp;삼고&nbsp;싶습니다.</span></p>
-<p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16"><span>새로운 발견:&nbsp;</span></p>
-<p data-ke-size="size16"><span>훌륭한 프로덕트 직감을 가진 사람들은 때때로 훌륭한 제품이 알려지기 전에 그것을 알아차립니다. 최고 수준의 지원자들을 인터뷰하는 경우, 새로운 혁신적인 발견을 알려주고 떠나는 경우가 많습니다. 이는&nbsp;프로덕트&nbsp;직관을&nbsp;확인할&nbsp;수&nbsp;있는&nbsp;좋은&nbsp;인터뷰&nbsp;질문들입니다.</span></p>
-<p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16"><span>1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 최근에 접한 훌륭한 제품에 대해 알려주세요. 왜 마음에 드셨나요? </span></p>
-<p data-ke-size="size16"><span>[면접에서 지원자가 제 제품 중 하나를 언급할 때면 정말 미치도록 기분이 좋습니다. 최근에 접한 제품 중 가장 멋진 제품이 야후였다고 말하는 지원자를 채용하는 데 어려움을 겪은 적이 있습니다.]</span></p>
-<p data-ke-size="size16"><span>2)&nbsp;&nbsp;&nbsp;&nbsp; [제품 삽입]이 성공할 수 있었던 이유는 무엇인가요? [저는 보통 아이팟이나 eBay처럼 혼잡한 시장에서 소비자들의 마음을 사로잡은 인기 제품을 선택합니다.]</span></p>
-<p data-ke-size="size16"><span>3)&nbsp;&nbsp;&nbsp;&nbsp; 내 제품의 어떤 점이 마음에 들지 않나요? 어떻게 개선하고 싶으신가요?</span></p>
-<p data-ke-size="size16"><span>4)&nbsp;&nbsp;&nbsp;&nbsp; 1년 후에 어떤 문제가 발생할까요? 2년? 10년 후?</span></p>
-<p data-ke-size="size16"><span>5)&nbsp;&nbsp;&nbsp;&nbsp; 제품이 잘 디자인되었는지 어떻게 알 수 있나요?</span></p>
-<p data-ke-size="size16"><span>6)&nbsp;&nbsp;&nbsp;&nbsp; 지금까지 생각해 본 최고의 아이디어는 무엇인가요?</span></p>
-<p data-ke-size="size16"><span>7)&nbsp;&nbsp;&nbsp;&nbsp; 최악의 아이디어는 무엇인가요?</span></p>
-<p data-ke-size="size16"><span>8)&nbsp;&nbsp;&nbsp; 제품을 출시하기 위해 언제 비용을 절감해야 하는지 어떻게 알 수 있나요?</span></p>
-<p data-ke-size="size16"><span>9)&nbsp;&nbsp;&nbsp;&nbsp; 사용자 인터페이스 디자인에 대해 어떤 교훈을 얻었나요?</span></p>
-<p data-ke-size="size16"><span>10)&nbsp; 만들지 말아야 할 것을 어떻게 결정하나요?</span></p>
-<p data-ke-size="size16"><span>11)&nbsp;&nbsp;&nbsp; 가장 큰 제품 실수는 무엇인가요?</span></p>
-<p data-ke-size="size16"><span>12)&nbsp;&nbsp; 제품 관리에서 가장 흥미롭지 않은 측면은 무엇이며 그 이유는 무엇인가요?</span></p>
-<p data-ke-size="size16"><span>13)&nbsp;&nbsp; 스스로 창의적이라고 생각하시나요?</span></p>
-<p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16"><span>4. 얻어진 리더십&nbsp;</span></p>
-<p data-ke-size="size16"><span>프로덕트&nbsp;매니저는&nbsp;자신의&nbsp;조직&nbsp;내에서&nbsp;리더로&nbsp;자리매김하는&nbsp;경우가&nbsp;많습니다.&nbsp;그러나&nbsp;실제로&nbsp;다른&nbsp;사람들에게&nbsp;직접&nbsp;명령을&nbsp;내릴&nbsp;수&nbsp;있는&nbsp;직접적인&nbsp;권한이&nbsp;없는&nbsp;경우가&nbsp;일반적입니다.&nbsp;이는&nbsp;그들의&nbsp;리더십이&nbsp;권위가&nbsp;아닌&nbsp;영향력으로부터&nbsp;나온다는&nbsp;것을&nbsp;의미합니다.&nbsp;즉,&nbsp;권한에&nbsp;의한&nbsp;리더가&nbsp;아니라&nbsp;영향력으로&nbsp;인정받는&nbsp;리더인&nbsp;것이죠.&nbsp;리더십과&nbsp;인간관계&nbsp;능력은&nbsp;프로덕트&nbsp;매니저에게&nbsp;중대한&nbsp;역량입니다.&nbsp;리더십에&nbsp;관한&nbsp;책이&nbsp;수없이&nbsp;많지만,&nbsp;저는&nbsp;대부분의&nbsp;책이&nbsp;그리&nbsp;유용하지&nbsp;않다고&nbsp;생각합니다.&nbsp;그래서&nbsp;저는&nbsp;리더십&nbsp;능력을&nbsp;검증할&nbsp;수&nbsp;있는&nbsp;가장&nbsp;효과적인&nbsp;방법을&nbsp;찾아냈습니다.&nbsp;특히,&nbsp;직접&nbsp;함께&nbsp;일해보지&nbsp;않았지만&nbsp;지원자를&nbsp;잘&nbsp;아는&nbsp;동료나&nbsp;개인적인&nbsp;기여자들에게&nbsp;참조를&nbsp;요청하는&nbsp;것을&nbsp;중요하게&nbsp;생각합니다.&nbsp;물론,&nbsp;저만의&nbsp;인터뷰&nbsp;질문&nbsp;목록도&nbsp;있습니다.</span></p>
-<p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16"><span>1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 합의는 항상 좋은 것일까요?</span></p>
-<p data-ke-size="size16"><span>2)&nbsp;&nbsp;&nbsp;&nbsp; 관리와 리더십의 차이점은 무엇인가요?</span></p>
-<p data-ke-size="size16"><span>3)&nbsp;&nbsp;&nbsp;&nbsp; 어떤 종류의 사람들과 함께 일하는 것을 좋아하시나요?</span></p>
-<p data-ke-size="size16"><span>4)&nbsp;&nbsp;&nbsp;&nbsp; 어떤 유형의 사람들과 함께 일하기 어려웠던 적이 있나요?</span></p>
-<p data-ke-size="size16"><span>5)&nbsp;&nbsp;&nbsp;&nbsp; 팀이 잘 맞지 않았던 때가 있었나요? 왜 그런 일이 일어났다고 생각하며 무엇을 배웠다고 생각하나요?</span></p>
-<p data-ke-size="size16"><span>6)&nbsp;&nbsp;&nbsp;&nbsp; 팀이 일정에 충실하도록 하려면 어떻게 해야 하나요?</span></p>
-<p data-ke-size="size16"><span>7)&nbsp;&nbsp;&nbsp;&nbsp; 누군가가 당신의 자신감을 잃게 하려면 어떻게 해야 하나요?</span></p>
-<p data-ke-size="size16"><span>8)&nbsp;&nbsp;&nbsp; 다른 직군의 사람들을 다르게 관리하나요? 그렇다면 어떻게 관리하나요?</span></p>
-<p data-ke-size="size16"><span>9)&nbsp;&nbsp;&nbsp;&nbsp; '아니오'라고 말하는 것에 대해 무엇을 배웠나요?</span></p>
-<p data-ke-size="size16"><span>10)&nbsp; 제품 배송에 대한 최종 책임은 누구에게 있나요?</span></p>
-<p data-ke-size="size16"><span>11)&nbsp;&nbsp;&nbsp; 팀원들이 여러분을 실망시키고 여러분이 모든 책임을 져야 하는 상황에 처한 적이 있나요?</span></p>
-<p data-ke-size="size16"><span>12)&nbsp;&nbsp; 실수에 대한 관용이 수년에 걸쳐 어떻게 변했나요?</span></p>
-<p data-ke-size="size16"><span>13)&nbsp;&nbsp; 좋은 소식과 나쁜 소식 중 어느 쪽이 먼저 마음에 드시나요?</span></p>
-<p data-ke-size="size16"><span>14)&nbsp;&nbsp; 채용에 대한 여러분의 접근 방식은 무엇인가요?</span></p>
-<p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16"><span>5. 여러관점을 볼 수 있는 능력</span></p>
-<p data-ke-size="size16"><span>프로덕트&nbsp;매니저가&nbsp;되기&nbsp;위해서는&nbsp;다양한&nbsp;역할을&nbsp;수행할&nbsp;수&nbsp;있는&nbsp;능력이&nbsp;필요합니다.&nbsp;저는&nbsp;종종&nbsp;농담삼아,&nbsp;프로덕트&nbsp;매니저의&nbsp;업무&nbsp;대부분이&nbsp;고객,&nbsp;개발자,&nbsp;판매자,&nbsp;임원,&nbsp;마케팅&nbsp;담당자와&nbsp;같은&nbsp;이&nbsp;방에&nbsp;없는&nbsp;사람들을&nbsp;대변하는&nbsp;것이라고&nbsp;말합니다.&nbsp;이는&nbsp;프로덕트&nbsp;매니저가&nbsp;다른&nbsp;사람들의&nbsp;업무를&nbsp;충분히&nbsp;이해하고&nbsp;대변할&nbsp;수&nbsp;있어야&nbsp;함을&nbsp;의미합니다.&nbsp;실제로&nbsp;그들의&nbsp;일을&nbsp;대신하지&nbsp;않더라도,&nbsp;이를&nbsp;충분히&nbsp;이해할&nbsp;수&nbsp;있을&nbsp;만큼&nbsp;똑똑해야&nbsp;합니다.&nbsp;훌륭한&nbsp;프로덕트&nbsp;매니저는&nbsp;다양한&nbsp;관점을&nbsp;이해하고,&nbsp;때로는&nbsp;악마의&nbsp;대변인&nbsp;역할을&nbsp;할&nbsp;수&nbsp;있는&nbsp;사람입니다.&nbsp;그들은&nbsp;단순한&nbsp;대답에&nbsp;만족하지&nbsp;않고,&nbsp;기술적&nbsp;가능성이나&nbsp;판매&nbsp;전략이&nbsp;실제로&nbsp;어떻게&nbsp;작동하는지&nbsp;깊이&nbsp;파고듭니다.<br /><br />다양한&nbsp;관점을&nbsp;평가하는&nbsp;가장&nbsp;확실한&nbsp;방법은&nbsp;인터뷰&nbsp;과정에&nbsp;가능한&nbsp;많은&nbsp;사람들을&nbsp;포함시키는&nbsp;것입니다.&nbsp;저는&nbsp;프로덕트&nbsp;매니저&nbsp;지원자와&nbsp;만나야&nbsp;할&nbsp;최소한의&nbsp;사람들로&nbsp;엔지니어,&nbsp;디자이너,&nbsp;마케팅&nbsp;담당자를&nbsp;항상&nbsp;추천합니다.&nbsp;특정&nbsp;역할에&nbsp;따라&nbsp;이&nbsp;목록은&nbsp;Pre-sales&nbsp;Engineering,&nbsp;경영&nbsp;지원,&nbsp;개발자,&nbsp;신사업&nbsp;개발&nbsp;팀,&nbsp;법무팀,&nbsp;고객&nbsp;등으로&nbsp;확장될&nbsp;수&nbsp;있습니다.&nbsp;모든&nbsp;사람을&nbsp;만날&nbsp;필요는&nbsp;없지만,&nbsp;각&nbsp;기능의&nbsp;대표적인&nbsp;사람&nbsp;한&nbsp;명씩은&nbsp;만나는&nbsp;것이&nbsp;좋습니다.&nbsp;모두를&nbsp;만족시킬&nbsp;필요는&nbsp;없으며,&nbsp;면접자&nbsp;수가&nbsp;많아짐에&nbsp;따라&nbsp;합의에&nbsp;도달하기&nbsp;어려울&nbsp;수&nbsp;있습니다.&nbsp;따라서,&nbsp;중요한&nbsp;것은&nbsp;피드백을&nbsp;적절히&nbsp;고려하는&nbsp;것입니다.&nbsp;어떤&nbsp;프로덕트&nbsp;매니저도&nbsp;세일즈&nbsp;프로세스를&nbsp;세일즈맨만큼&nbsp;이해할&nbsp;수는&nbsp;없지만,&nbsp;특정&nbsp;지식을&nbsp;면접관에게&nbsp;전달할&nbsp;수&nbsp;있다면&nbsp;충분합니다.&nbsp;예를&nbsp;들어,&nbsp;이&nbsp;사람이&nbsp;우리가&nbsp;채널&nbsp;개발에서&nbsp;겪고&nbsp;있는&nbsp;문제를&nbsp;얼마나&nbsp;잘&nbsp;이해하고&nbsp;있는지,&nbsp;그리고&nbsp;이를&nbsp;얼마나&nbsp;잘&nbsp;해결할&nbsp;수&nbsp;있는지&nbsp;등에&nbsp;대한&nbsp;질문을&nbsp;할&nbsp;수&nbsp;있습니다.&nbsp;다음은&nbsp;다양한&nbsp;관점을&nbsp;볼&nbsp;수&nbsp;있는&nbsp;능력을&nbsp;확인할&nbsp;수&nbsp;있는&nbsp;몇&nbsp;가지&nbsp;질문&nbsp;예시입니다.&nbsp;(직무에&nbsp;따라&nbsp;자유롭게&nbsp;조정&nbsp;가능합니다.)<br /><br /></span></p>
-<p data-ke-size="size16"><span>1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 영업 업무는 어떻게 배웠나요?</span></p>
-<p data-ke-size="size16"><span>2)&nbsp;&nbsp;&nbsp;&nbsp; 고객과 소통하는 가장 좋은 방법은 무엇인가요?</span></p>
-<p data-ke-size="size16"><span>3)&nbsp;&nbsp;&nbsp;&nbsp; 마케팅의 원동력은 무엇인가요?</span></p>
-<p data-ke-size="size16"><span>4)&nbsp;&nbsp;&nbsp;&nbsp; 디자인이 올바른 방향으로 가고 있는지 어떻게 알 수 있나요?</span></p>
-<p data-ke-size="size16"><span>5)&nbsp;&nbsp;&nbsp;&nbsp; 제품 관리자는 비즈니스 개발을 어떻게 지원해야 하나요?</span></p>
-<p data-ke-size="size16"><span>6)&nbsp;&nbsp;&nbsp;&nbsp; 관리에 대해 무엇을 배웠나요?</span></p>
-<p data-ke-size="size16"><span>7)&nbsp;&nbsp;&nbsp;&nbsp; 경영진과 함께 일하는 가장 좋은 방법은 무엇인가요?</span></p>
-<p data-ke-size="size16"><span>6. 제품의 시작과 끝을 경험한 사람</span></p>
-<p data-ke-size="size16"><span>제품의&nbsp;시작부터&nbsp;끝까지&nbsp;경험한&nbsp;사람을&nbsp;찾습니다.&nbsp;이&nbsp;특성은&nbsp;평가하기&nbsp;가장&nbsp;쉬울&nbsp;수&nbsp;있습니다.&nbsp;저는&nbsp;보통&nbsp;완전한&nbsp;신입이&nbsp;아니라면,&nbsp;이미&nbsp;제품&nbsp;개발&nbsp;경험이&nbsp;있는&nbsp;사람을&nbsp;선호합니다.&nbsp;즉,&nbsp;프로젝트의&nbsp;시작부터&nbsp;출시까지&nbsp;전&nbsp;과정을&nbsp;경험한&nbsp;사람을&nbsp;의미합니다.&nbsp;실제로&nbsp;훌륭한&nbsp;제품을&nbsp;출시해본&nbsp;경험이&nbsp;있는&nbsp;사람만큼&nbsp;명확한&nbsp;평가&nbsp;기준은&nbsp;없습니다.&nbsp;이는&nbsp;무형의&nbsp;경험을&nbsp;유형화하여&nbsp;평가할&nbsp;수&nbsp;있는&nbsp;좋은&nbsp;기회를&nbsp;제공합니다.&nbsp;레퍼런스를&nbsp;확인할&nbsp;때는,&nbsp;해당&nbsp;지원자가&nbsp;과거&nbsp;프로젝트에서&nbsp;어떻게&nbsp;기여했는지를&nbsp;알기&nbsp;위해&nbsp;이전&nbsp;프로젝트의&nbsp;프로덕트&nbsp;매니저,&nbsp;기술자,&nbsp;판매자,&nbsp;마케팅&nbsp;담당자와&nbsp;대화를&nbsp;나누곤&nbsp;합니다.&nbsp;이러한&nbsp;접근&nbsp;방식은&nbsp;경험이&nbsp;풍부하지만&nbsp;평범한&nbsp;사람보다는&nbsp;경험이&nbsp;없더라도&nbsp;뛰어난&nbsp;재능을&nbsp;가진&nbsp;사람을&nbsp;선호하는&nbsp;저의&nbsp;원칙에&nbsp;기반합니다.</span></p>
-<p data-ke-size="size16"><span>&nbsp;</span></p>
+이전 글 
+
+<https://nevermind22.tistory.com/25>
+
+[P.M Must Read 02 : How to Hire a Product Manager vol.01 오늘 번역할 글은 이미 테크 씬에서 너무 유명한 명불허전 Ken Norton의 가장 유명한 에세이인 How to hire a product manager" 입니다. 구글에서 PM 으로 근무하면서 우리가 현재 쓰고있는 Google Docs, Google Cal nevermind22.tistory.com](https://nevermind22.tistory.com/25)
+
+3. 제품에 대한 본능적 직관과 창의성
+
+![](../../Attachments/Tistory/26-01.gif)
+
+과연 직관은 대체 불가능한가..
+
+제품에 대한 본능적 직관과 창의성은 매우 주관적이며 평가하기 어려운 분야입니다. 하지만 이것은 매우 중요합니다. 저는 제품에 대한 직관이 천성적으로 있는 특정한 사람들이 있다고 굳게 믿고 있습니다. 이런 사람들은 마치 본능적으로 훌륭한 제품을 만드는 방법을 알고 있습니다. 비록 그들의 직감이 항상 정확한 것은 아니지만, 대체로 올바른 방향을 가리킵니다. 그들은 특정 관점을 열정적으로 지지하는 경향이 있으며, 이는 가끔 동료들 사이에 안타까움을 불러일으키기도 합니다. 저는 이러한 특성을 가진 사람들과 일할 수 있는 좋은 기회를 많이 가졌습니다. 이것은 프로덕트 매니저에게 필수적인 특성이며, 조정될 수는 있지만 배울 수는 없습니다. 특히 웹과 같이 작은 결정이 중요한 매우 다이나믹한 환경에서 일하는 PM에게 더욱 그렇습니다. 물론 많은 거시적 전략과 생각이 있습니다. 그러나 작은 결정이 훌륭한 PM과 좋은 PM을 구분합니다. 그들의 제안이 아무도 생각하지 못한 것이지만 듣자마자 모두를 사로잡는다면, 그들이 제품에 대한 직관(스파이더 센스)를 가지고 있다는 것을 알 수 있습니다. 이러한 직관을 인터뷰에서 판단하는 것은 가장 어렵지만, 방법은 있습니다. 저는 유일하게 한 시간 동안의 인터뷰를 통해 지원자가 다음과 같은 문제를 해결하는지 지켜보는 것입니다.\
+\
+제품에 대한 문제점:\
+좋은 PM이라면, 자신의 제품에 대해 많은 걱정을 가지고 있을 것입니다. UI의 부족한 점, 누락된 기능, 수정이 필요한 구조적 결함 등이 그것입니다. 이러한 문제들은 수정이 필요한 것들입니다. 적어도 이 문제들 중 몇 개는 제품에 대한 강한 본능을 가진 지적인 외부인들이 알아차릴 수 있을 것입니다. 저는 인터뷰어가 웃으며 고개를 끄덕이며 "저도 알아요, 그건 저를 지금까지 미치게 만들어왔어요"라고 말하는 순간을 기다립니다.\
+\
+제품에 대한 새로운 시각:\
+분명히 당신이 고려하지 못한 발전 가능성이 있습니다. 경쟁사에 대한 새로운 아이디어, 수정이 필요한 직면한 문제 등이 그것입니다. 저는 지원자로부터 배울 때 두 가지 경우입니다. 1) 비판적으로 이야기하는 것을 두려워하지 않을 때, 2) 그들이 나보다 똑똑할 때입니다. 저는 이 두 가지를 PM으로 삼고 싶습니다.
+
+새로운 발견: 
+
+훌륭한 프로덕트 직감을 가진 사람들은 때때로 훌륭한 제품이 알려지기 전에 그것을 알아차립니다. 최고 수준의 지원자들을 인터뷰하는 경우, 새로운 혁신적인 발견을 알려주고 떠나는 경우가 많습니다. 이는 프로덕트 직관을 확인할 수 있는 좋은 인터뷰 질문들입니다.
+
+1\)      최근에 접한 훌륭한 제품에 대해 알려주세요. 왜 마음에 드셨나요?
+
+[면접에서 지원자가 제 제품 중 하나를 언급할 때면 정말 미치도록 기분이 좋습니다. 최근에 접한 제품 중 가장 멋진 제품이 야후였다고 말하는 지원자를 채용하는 데 어려움을 겪은 적이 있습니다.]
+
+2\)     [제품 삽입]이 성공할 수 있었던 이유는 무엇인가요? [저는 보통 아이팟이나 eBay처럼 혼잡한 시장에서 소비자들의 마음을 사로잡은 인기 제품을 선택합니다.]
+
+3\)     내 제품의 어떤 점이 마음에 들지 않나요? 어떻게 개선하고 싶으신가요?
+
+4\)     1년 후에 어떤 문제가 발생할까요? 2년? 10년 후?
+
+5\)     제품이 잘 디자인되었는지 어떻게 알 수 있나요?
+
+6\)     지금까지 생각해 본 최고의 아이디어는 무엇인가요?
+
+7\)     최악의 아이디어는 무엇인가요?
+
+8\)    제품을 출시하기 위해 언제 비용을 절감해야 하는지 어떻게 알 수 있나요?
+
+9\)     사용자 인터페이스 디자인에 대해 어떤 교훈을 얻었나요?
+
+10\)  만들지 말아야 할 것을 어떻게 결정하나요?
+
+11\)    가장 큰 제품 실수는 무엇인가요?
+
+12\)   제품 관리에서 가장 흥미롭지 않은 측면은 무엇이며 그 이유는 무엇인가요?
+
+13\)   스스로 창의적이라고 생각하시나요?
+
+4. 얻어진 리더십 
+
+프로덕트 매니저는 자신의 조직 내에서 리더로 자리매김하는 경우가 많습니다. 그러나 실제로 다른 사람들에게 직접 명령을 내릴 수 있는 직접적인 권한이 없는 경우가 일반적입니다. 이는 그들의 리더십이 권위가 아닌 영향력으로부터 나온다는 것을 의미합니다. 즉, 권한에 의한 리더가 아니라 영향력으로 인정받는 리더인 것이죠. 리더십과 인간관계 능력은 프로덕트 매니저에게 중대한 역량입니다. 리더십에 관한 책이 수없이 많지만, 저는 대부분의 책이 그리 유용하지 않다고 생각합니다. 그래서 저는 리더십 능력을 검증할 수 있는 가장 효과적인 방법을 찾아냈습니다. 특히, 직접 함께 일해보지 않았지만 지원자를 잘 아는 동료나 개인적인 기여자들에게 참조를 요청하는 것을 중요하게 생각합니다. 물론, 저만의 인터뷰 질문 목록도 있습니다.
+
+1\)      합의는 항상 좋은 것일까요?
+
+2\)     관리와 리더십의 차이점은 무엇인가요?
+
+3\)     어떤 종류의 사람들과 함께 일하는 것을 좋아하시나요?
+
+4\)     어떤 유형의 사람들과 함께 일하기 어려웠던 적이 있나요?
+
+5\)     팀이 잘 맞지 않았던 때가 있었나요? 왜 그런 일이 일어났다고 생각하며 무엇을 배웠다고 생각하나요?
+
+6\)     팀이 일정에 충실하도록 하려면 어떻게 해야 하나요?
+
+7\)     누군가가 당신의 자신감을 잃게 하려면 어떻게 해야 하나요?
+
+8\)    다른 직군의 사람들을 다르게 관리하나요? 그렇다면 어떻게 관리하나요?
+
+9\)     '아니오'라고 말하는 것에 대해 무엇을 배웠나요?
+
+10\)  제품 배송에 대한 최종 책임은 누구에게 있나요?
+
+11\)    팀원들이 여러분을 실망시키고 여러분이 모든 책임을 져야 하는 상황에 처한 적이 있나요?
+
+12\)   실수에 대한 관용이 수년에 걸쳐 어떻게 변했나요?
+
+13\)   좋은 소식과 나쁜 소식 중 어느 쪽이 먼저 마음에 드시나요?
+
+14\)   채용에 대한 여러분의 접근 방식은 무엇인가요?
+
+5. 여러관점을 볼 수 있는 능력
+
+프로덕트 매니저가 되기 위해서는 다양한 역할을 수행할 수 있는 능력이 필요합니다. 저는 종종 농담삼아, 프로덕트 매니저의 업무 대부분이 고객, 개발자, 판매자, 임원, 마케팅 담당자와 같은 이 방에 없는 사람들을 대변하는 것이라고 말합니다. 이는 프로덕트 매니저가 다른 사람들의 업무를 충분히 이해하고 대변할 수 있어야 함을 의미합니다. 실제로 그들의 일을 대신하지 않더라도, 이를 충분히 이해할 수 있을 만큼 똑똑해야 합니다. 훌륭한 프로덕트 매니저는 다양한 관점을 이해하고, 때로는 악마의 대변인 역할을 할 수 있는 사람입니다. 그들은 단순한 대답에 만족하지 않고, 기술적 가능성이나 판매 전략이 실제로 어떻게 작동하는지 깊이 파고듭니다.\
+\
+다양한 관점을 평가하는 가장 확실한 방법은 인터뷰 과정에 가능한 많은 사람들을 포함시키는 것입니다. 저는 프로덕트 매니저 지원자와 만나야 할 최소한의 사람들로 엔지니어, 디자이너, 마케팅 담당자를 항상 추천합니다. 특정 역할에 따라 이 목록은 Pre-sales Engineering, 경영 지원, 개발자, 신사업 개발 팀, 법무팀, 고객 등으로 확장될 수 있습니다. 모든 사람을 만날 필요는 없지만, 각 기능의 대표적인 사람 한 명씩은 만나는 것이 좋습니다. 모두를 만족시킬 필요는 없으며, 면접자 수가 많아짐에 따라 합의에 도달하기 어려울 수 있습니다. 따라서, 중요한 것은 피드백을 적절히 고려하는 것입니다. 어떤 프로덕트 매니저도 세일즈 프로세스를 세일즈맨만큼 이해할 수는 없지만, 특정 지식을 면접관에게 전달할 수 있다면 충분합니다. 예를 들어, 이 사람이 우리가 채널 개발에서 겪고 있는 문제를 얼마나 잘 이해하고 있는지, 그리고 이를 얼마나 잘 해결할 수 있는지 등에 대한 질문을 할 수 있습니다. 다음은 다양한 관점을 볼 수 있는 능력을 확인할 수 있는 몇 가지 질문 예시입니다. (직무에 따라 자유롭게 조정 가능합니다.)
+
+
+1\)      영업 업무는 어떻게 배웠나요?
+
+2\)     고객과 소통하는 가장 좋은 방법은 무엇인가요?
+
+3\)     마케팅의 원동력은 무엇인가요?
+
+4\)     디자인이 올바른 방향으로 가고 있는지 어떻게 알 수 있나요?
+
+5\)     제품 관리자는 비즈니스 개발을 어떻게 지원해야 하나요?
+
+6\)     관리에 대해 무엇을 배웠나요?
+
+7\)     경영진과 함께 일하는 가장 좋은 방법은 무엇인가요?
+
+6. 제품의 시작과 끝을 경험한 사람
+
+제품의 시작부터 끝까지 경험한 사람을 찾습니다. 이 특성은 평가하기 가장 쉬울 수 있습니다. 저는 보통 완전한 신입이 아니라면, 이미 제품 개발 경험이 있는 사람을 선호합니다. 즉, 프로젝트의 시작부터 출시까지 전 과정을 경험한 사람을 의미합니다. 실제로 훌륭한 제품을 출시해본 경험이 있는 사람만큼 명확한 평가 기준은 없습니다. 이는 무형의 경험을 유형화하여 평가할 수 있는 좋은 기회를 제공합니다. 레퍼런스를 확인할 때는, 해당 지원자가 과거 프로젝트에서 어떻게 기여했는지를 알기 위해 이전 프로젝트의 프로덕트 매니저, 기술자, 판매자, 마케팅 담당자와 대화를 나누곤 합니다. 이러한 접근 방식은 경험이 풍부하지만 평범한 사람보다는 경험이 없더라도 뛰어난 재능을 가진 사람을 선호하는 저의 원칙에 기반합니다.

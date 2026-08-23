@@ -4,30 +4,32 @@ date: 2024-03-03
 publish: true
 ---
 
-<p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16">들어가기 전&nbsp;</p>
-<p data-ke-size="size16">처음 프로덕트 로드맵이란 단어를 접한건 프로덕트 전략에 대해 공부할 때 이다. 이때 너무나 많은 로드맵 방식이 있어 어떻게 접근해야 할지 몰라 주먹구구 식으로 접근한 적이 많다.. 이제는 조금 전문성있게 로드맵을 설정하고 이를 바탕으로 백로그를 작성해보고 싶기에 로드맵에 대해 깊이있게 공부해 보고자 다음 글을 해석해보고자 한다.&nbsp;</p>
-<p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16"><a href="https://www.romanpichler.com/blog/goal-oriented-agile-product-roadmap/">https://www.romanpichler.com/blog/goal-oriented-agile-product-roadmap/</a></p>
-<figure id="og_1709442482951" contenteditable="false" data-ke-type="opengraph" data-ke-align="alignCenter" data-og-type="article" data-og-title="The GO Product Roadmap" data-og-description="This post provides an overview of the GO product roadmap: a goal-oriented, agile roadmap that effectively captures how your product is likely to evolve." data-og-host="www.romanpichler.com" data-og-source-url="https://www.romanpichler.com/blog/goal-oriented-agile-product-roadmap/" data-og-url="https://www.romanpichler.com/blog/goal-oriented-agile-product-roadmap/" data-og-image="https://blog.kakaocdn.net/dna/8ZcWy/hyVuf7I7Xy/AAAAAAAAAAAAAAAAAAAAAHCFj0cFMzJyyF6LbtxWI7UCVLkDqp55K_pQMych5kz5/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=CoKsaHyaH9fUbNPPb7aRDJu4qMs%3D"><a href="https://www.romanpichler.com/blog/goal-oriented-agile-product-roadmap/" target="_blank" rel="noopener" data-source-url="https://www.romanpichler.com/blog/goal-oriented-agile-product-roadmap/">
-<div class="og-image" style="background-image: url('https://blog.kakaocdn.net/dna/8ZcWy/hyVuf7I7Xy/AAAAAAAAAAAAAAAAAAAAAHCFj0cFMzJyyF6LbtxWI7UCVLkDqp55K_pQMych5kz5/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=CoKsaHyaH9fUbNPPb7aRDJu4qMs%3D');">&nbsp;</div>
-<div class="og-text">
-<p class="og-title" data-ke-size="size16">The GO Product Roadmap</p>
-<p class="og-desc" data-ke-size="size16">This post provides an overview of the GO product roadmap: a goal-oriented, agile roadmap that effectively captures how your product is likely to evolve.</p>
-<p class="og-host" data-ke-size="size16">www.romanpichler.com</p>
-</div>
-</a></figure>
-<p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16"><span>프로덕트 로드맵은 중요한 프로덕트 관리 도구이다<span>. </span>그러나 이를 효과적으로 적용시키는 데는 많은 어려움들이 존재한다<span>. </span>로드맵은 보통 기능에 그 초점이 맞추어져 있다<span>. </span>이것은 합의와 조율을 이루기 힘들게 하고 너무나 디테일하여 자주 바뀌는 경향이 있다 이 아티클에서는 새로운 프로덕트 로드맵<span>&nbsp;</span></span><span>탬플릿을</span><span><span>&nbsp;</span></span><span>소개하고자</span><span><span>&nbsp;</span>한다<span> : Go product roadmap</span>이 그것이다<span>. </span>이는<span>&nbsp;</span></span><span>목표 지향 로드맵으로</span><span><span>&nbsp;</span>목표와 기능을 결합한 새로운 방식이다<span>. </span>이는<span>&nbsp;</span></span><span>애</span><span>자</span><span>일하고</span><span><span>&nbsp;</span><span>역동적인 환경에<span>&nbsp;</span></span><span>적합할 것이다<span>.</span></span></span></p>
-<p data-ke-size="size16"><span>&nbsp;</span></p>
-<p data-ke-size="size16"><span>프로덕트 로드맵은 다가오는 향후 몇달간 제품이 어떻게 발전할 수 있는지를 설명하는 고차원의 전략 기획이다</span><span>. </span><span>이러한 계획을 사용하는 것은 목적을 설정하고 개발팀과 이해관계자들의 기대와 합의를 설정한다</span><span>. </span><span>이것은 우선순위를 설정하고 프로덕트 백로그에 대한 부담을 덜어준다</span><span>. </span><span>하지만 많은 사람들이 제대로 프로덕트 로드맵을 활용하는데 어려움이 있다는 것을 찾을 수 있었다</span><span>. 생각보다 많은 경우에서&nbsp;</span><span>계획은 기능에 의해 지배된다</span><span>. </span><span>많은 기능</span><span>, </span><span>특징들이 있으며 너무나 세분화되어 있다</span><span>. </span><span>이런 로드맵은 동의를 확보하기 어려우며 조율을 만들기 힘들다</span><span>. </span><span>이런 세분화된 로드맵은 프로덕트 백로그와 겹치고 경쟁하게 된다. 변경될 가능성이 높은 고차원의 기획이 아닌 그저 약속으로 간주된다</span><span>. </span><span>이런 상황을 타파하기 위해 나는 목표 지향적인 애자일 로드맵을 개발했다</span><span>(GO-product roadmap).</span></p>
-<p data-ke-size="size16"><span>&nbsp;</span></p>
-<p data-ke-size="size16"><span>이름에서 알 수 있듯이 이 계획의 핵심은 특징이나 기능의 일부분이 아닌 목표와 아웃풋에 있다</span><span>. </span><span>이것은 나의 경험과 프로덕트 오너들 혹은 프로덕트 매니저들을 코칭하고 가르치면서 얻은 경험을 바탕으로 한다</span><span>. </span><span>하지만 프로덕트 로드맵의 포맷을 제가 고안한것이 아니라는 것을 아셨으면 한다</span><span>. </span><span>이런 방식들은 몇 년 동안 사용되어 왔으며 솔직하게 말하면 이것을 처음으로 고안한 사람은 정확히 알지 못한다</span></p>
-<p data-ke-size="size16"><span>&nbsp;</span></p>
-<h4 data-ke-size="size20"><span>GO product roadmap</span><span>의 설명</span></h4>
-<p data-ke-size="size16"><span>GO product roadmap</span><span>은 다음과 같이 생겼다 </span></p>
-<p><figure class="imageblock alignLeft" data-ke-mobileStyle="widthOrigin" data-origin-width="1280" data-origin-height="954"><span data-url="https://blog.kakaocdn.net/dna/cjhp1m/btsFt3WmS88/AAAAAAAAAAAAAAAAAAAAAOUwiQX9xwjY0NFDbd6dYBJ3wzTP-7kN0EgsJyd2xsrI/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=7d2hY5ULC02wQaYAlRN55xEfpzI%3D" data-phocus="https://blog.kakaocdn.net/dna/cjhp1m/btsFt3WmS88/AAAAAAAAAAAAAAAAAAAAAOUwiQX9xwjY0NFDbd6dYBJ3wzTP-7kN0EgsJyd2xsrI/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=7d2hY5ULC02wQaYAlRN55xEfpzI%3D" data-alt="Go Product Roadmap"><img src="../../Attachments/Tistory/27-01.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="600" height="447" data-origin-width="1280" data-origin-height="954"/></span><figcaption>Go Product Roadmap</figcaption>
-</figure>
-</p>
-<p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16"><span>먼저</span><span> 3</span><span>번째 열에 위치한 줄여서 목표라 불리는 프로덕트 목표에 대해 설명하도록 하겠다 </span><span>. 나의 경우&nbsp;</span><span>프로덕트가 향후 몇개월간 만들어낼 베네핏</span><span>, </span><span>아웃풋을 규정함으로써 </span><span>Go product roadmap</span><span>을 시작하는 것을 좋아한다</span><span>. </span><span>이러한 목표는 </span><span>제품이 만들어낼 특정한 가치를 설명해야 하며 왜 돈과 시간과 에너지를 이 제품에 사용해야 하는지 그 이유에 대해 답변할 수 있어야 한다</span><span>. </span><span>목표의 예시로는 새로운 유저들의 확보</span><span>, </span><span>유저 경험향상을 통한 고객유지</span><span>, </span><span>기술부채 제거를 통한 개발 속도 향상</span><span>. </span><span>추가적으로 프로덕트 목표는 제품전략과 경영목표와 일치해야 한다</span><span>. </span></p>
+들어가기 전
+
+처음 프로덕트 로드맵이란 단어를 접한건 프로덕트 전략에 대해 공부할 때 이다. 이때 너무나 많은 로드맵 방식이 있어 어떻게 접근해야 할지 몰라 주먹구구 식으로 접근한 적이 많다.. 이제는 조금 전문성있게 로드맵을 설정하고 이를 바탕으로 백로그를 작성해보고 싶기에 로드맵에 대해 깊이있게 공부해 보고자 다음 글을 해석해보고자 한다.
+
+<https://www.romanpichler.com/blog/goal-oriented-agile-product-roadmap/>
+
+[The GO Product Roadmap This post provides an overview of the GO product roadmap: a goal-oriented, agile roadmap that effectively captures how your product is likely to evolve. www.romanpichler.com](https://www.romanpichler.com/blog/goal-oriented-agile-product-roadmap/)
+
+프로덕트 로드맵은 중요한 프로덕트 관리 도구이다. 그러나 이를 효과적으로 적용시키는 데는 많은 어려움들이 존재한다. 로드맵은 보통 기능에 그 초점이 맞추어져 있다. 이것은 합의와 조율을 이루기 힘들게 하고 너무나 디테일하여 자주 바뀌는 경향이 있다 이 아티클에서는 새로운 프로덕트 로드맵 탬플릿을 소개하고자 한다 : Go product roadmap이 그것이다. 이는 목표 지향 로드맵으로 목표와 기능을 결합한 새로운 방식이다. 이는 애자일하고 역동적인 환경에 적합할 것이다.
+
+ 
+
+프로덕트 로드맵은 다가오는 향후 몇달간 제품이 어떻게 발전할 수 있는지를 설명하는 고차원의 전략 기획이다. 이러한 계획을 사용하는 것은 목적을 설정하고 개발팀과 이해관계자들의 기대와 합의를 설정한다. 이것은 우선순위를 설정하고 프로덕트 백로그에 대한 부담을 덜어준다. 하지만 많은 사람들이 제대로 프로덕트 로드맵을 활용하는데 어려움이 있다는 것을 찾을 수 있었다. 생각보다 많은 경우에서 계획은 기능에 의해 지배된다. 많은 기능, 특징들이 있으며 너무나 세분화되어 있다. 이런 로드맵은 동의를 확보하기 어려우며 조율을 만들기 힘들다. 이런 세분화된 로드맵은 프로덕트 백로그와 겹치고 경쟁하게 된다. 변경될 가능성이 높은 고차원의 기획이 아닌 그저 약속으로 간주된다. 이런 상황을 타파하기 위해 나는 목표 지향적인 애자일 로드맵을 개발했다(GO-product roadmap).
+
+ 
+
+이름에서 알 수 있듯이 이 계획의 핵심은 특징이나 기능의 일부분이 아닌 목표와 아웃풋에 있다. 이것은 나의 경험과 프로덕트 오너들 혹은 프로덕트 매니저들을 코칭하고 가르치면서 얻은 경험을 바탕으로 한다. 하지만 프로덕트 로드맵의 포맷을 제가 고안한것이 아니라는 것을 아셨으면 한다. 이런 방식들은 몇 년 동안 사용되어 왔으며 솔직하게 말하면 이것을 처음으로 고안한 사람은 정확히 알지 못한다
+
+ 
+
+#### GO product roadmap의 설명
+
+GO product roadmap은 다음과 같이 생겼다
+
+![](../../Attachments/Tistory/27-01.png)
+
+Go Product Roadmap
+
+먼저 3번째 열에 위치한 줄여서 목표라 불리는 프로덕트 목표에 대해 설명하도록 하겠다 . 나의 경우 프로덕트가 향후 몇개월간 만들어낼 베네핏, 아웃풋을 규정함으로써 Go product roadmap을 시작하는 것을 좋아한다. 이러한 목표는 제품이 만들어낼 특정한 가치를 설명해야 하며 왜 돈과 시간과 에너지를 이 제품에 사용해야 하는지 그 이유에 대해 답변할 수 있어야 한다. 목표의 예시로는 새로운 유저들의 확보, 유저 경험향상을 통한 고객유지, 기술부채 제거를 통한 개발 속도 향상. 추가적으로 프로덕트 목표는 제품전략과 경영목표와 일치해야 한다.

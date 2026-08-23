@@ -4,155 +4,219 @@ date: 2025-07-11
 publish: true
 ---
 
-<p data-ke-size="size16"><span><a href="https://nevermind22.tistory.com/35" target="_blank" rel="noopener&nbsp;noreferrer">https://nevermind22.tistory.com/35</a></span></p>
-<figure id="og_1751857876347" contenteditable="false" data-ke-type="opengraph" data-ke-align="alignCenter" data-og-type="article" data-og-title="회귀분석 시작 전 꼭 알아야 할 개념과 흐름" data-og-description="TV 광고를 많이 하면 정말 매출이 오를까?지금 매출 데이터를 보면, 다음 달에는 얼마나 팔릴까?이런 질문들은 모두 하나의 공통된 갈증에서 시작된다.지금의 현상을 더 잘 이해하고, 앞으로를 " data-og-host="nevermind22.tistory.com" data-og-source-url="https://nevermind22.tistory.com/35" data-og-url="https://nevermind22.tistory.com/35" data-og-image="https://blog.kakaocdn.net/dna/dnJfjk/hyZfWxJVK7/AAAAAAAAAAAAAAAAAAAAAMMpmKkBT35EVH03WYWyED0kiRVoHB_3cZiSb1KMitB8/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=bP5ZqvDbdWHbXOim%2BuZWlXKEhLA%3D"><a href="https://nevermind22.tistory.com/35" target="_blank" rel="noopener" data-source-url="https://nevermind22.tistory.com/35">
-<div class="og-image" style="background-image: url('https://blog.kakaocdn.net/dna/dnJfjk/hyZfWxJVK7/AAAAAAAAAAAAAAAAAAAAAMMpmKkBT35EVH03WYWyED0kiRVoHB_3cZiSb1KMitB8/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=bP5ZqvDbdWHbXOim%2BuZWlXKEhLA%3D');">&nbsp;</div>
-<div class="og-text">
-<p class="og-title" data-ke-size="size16">회귀분석 시작 전 꼭 알아야 할 개념과 흐름</p>
-<p class="og-desc" data-ke-size="size16">TV 광고를 많이 하면 정말 매출이 오를까?지금 매출 데이터를 보면, 다음 달에는 얼마나 팔릴까?이런 질문들은 모두 하나의 공통된 갈증에서 시작된다.지금의 현상을 더 잘 이해하고, 앞으로를</p>
-<p class="og-host" data-ke-size="size16">nevermind22.tistory.com</p>
-</div>
-</a></figure>
-<p data-ke-size="size16"><span>앞서 적은 글에서 모델의 종류는 크게 2가지 가 있다고 했다&nbsp;</span><br /><span>단순 선형 회귀와&nbsp;</span></p>
-<p data-ke-size="size16"><span>다중 선형 회귀&nbsp;</span></p>
-<p data-ke-size="size16"><span>다중을 이해하기 위해선<b> 단순의 구조를 확실히 알아야 한다.&nbsp;</b></span><br /><span>따라서 이번 시간엔 단순 선형 회귀를 이해하기 위한 선행지식을 알고&nbsp;</span><br /><span>SLR 을 이해해보는 시간을 가져보고자 한다&nbsp;</span></p>
-<blockquote data-ke-style="style3">2. SLR(Simple Linear Regression) 의 이해&nbsp;<br />2.1 Cor(공분산)과 Cov(상관계수)&nbsp;<br />2.2 SLR 모델의 기본형태, OLS 의 기본개념&nbsp;<br />2.3 표준편차, T-test, 신뢰구간 과 SLR의 연관성&nbsp;<br />2.4 예측&nbsp;<br />2.5 R^2 (적합성의 측정)&nbsp;</blockquote>
-<p data-ke-size="size16">&nbsp;</p>
-<h2 data-ke-size="size26"><span><b>2. SLR(Simple Linear Regression) 의 이해</b></span></h2>
-<p><figure class="imageblock alignLeft" data-ke-mobileStyle="widthOrigin" data-origin-width="372" data-origin-height="315"><span data-url="https://blog.kakaocdn.net/dna/GdDlq/btsO7RFKdlc/AAAAAAAAAAAAAAAAAAAAAKhI8_Dg4YB56-2tPJs54czIk51tu8oPHW4z_6Qg63Ea/img.webp?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=PVE2jcsgE07ge0ahL86iVKqhZbw%3D" data-phocus="https://blog.kakaocdn.net/dna/GdDlq/btsO7RFKdlc/AAAAAAAAAAAAAAAAAAAAAKhI8_Dg4YB56-2tPJs54czIk51tu8oPHW4z_6Qg63Ea/img.webp?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=PVE2jcsgE07ge0ahL86iVKqhZbw%3D" data-alt="프랜시스 골턴 (Francis Galton) '평균으로의 회귀'(regression to the mean"><img src="../../../Attachments/Tistory/36-01.webp" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="372" height="315" data-origin-width="372" data-origin-height="315"/></span><figcaption>프랜시스 골턴 (Francis Galton) '평균으로의 회귀'(regression to the mean</figcaption>
-</figure>
-</p>
-<p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16"><span>"회귀"라는 말은 원래 '어떤 상태로 돌아간다'는 의미를 가지고 있다. 그렇다면 <b>선형회귀</b>는 어디로 돌아간다는 걸까?</span></p>
-<p data-end="359" data-start="159" data-ke-size="size16"><span>이 질문에 대한 실마리는 19세기 생물학자 프랜시스 골턴(Francis Galton)의 연구에서 시작된다. </span></p>
-<p data-end="359" data-start="159" data-ke-size="size16"><span>그는 부모의 키가 매우 크거나 작을 경우, 자녀의 키는 부모보다 <b>평균에 가까워지는 경향이 있다는 사실</b>을 발견했다. 이 현상을 설명하기 위해 <b>"평균으로의 회귀(regression to the mean)"</b>라는 용어를 처음으로 사용했다.</span></p>
-<p><figure class="imageblock alignLeft" data-ke-mobileStyle="widthOrigin" data-origin-width="1000" data-origin-height="698"><span data-url="https://blog.kakaocdn.net/dna/5KIxE/btsPdgUG71o/AAAAAAAAAAAAAAAAAAAAADeRpzS5V94BVSB_7vOjNsAN27orzqwel2jkNjUXJpsm/img.webp?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=D9fFgRTVsuelI8NvyJ9e4TABpeE%3D" data-phocus="https://blog.kakaocdn.net/dna/5KIxE/btsPdgUG71o/AAAAAAAAAAAAAAAAAAAAADeRpzS5V94BVSB_7vOjNsAN27orzqwel2jkNjUXJpsm/img.webp?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=D9fFgRTVsuelI8NvyJ9e4TABpeE%3D" data-alt="극단값으로 회귀하는 대표적인 예시 , 우리는 평균으로의 회귀를 다룰거다"><img src="../../../Attachments/Tistory/36-02.webp" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="474" height="331" data-origin-width="1000" data-origin-height="698"/></span><figcaption>극단값으로 회귀하는 대표적인 예시 , 우리는 평균으로의 회귀를 다룰거다</figcaption>
-</figure>
-</p>
-<p data-end="560" data-start="361" data-ke-size="size16">&nbsp;</p>
-<p data-end="560" data-start="361" data-ke-size="size16"><span>골턴은 205명의 부모와 930명의 자녀 키 데이터를 분석한 끝에, 키는 유전적인 영향을 받되, 자녀의 키는 부모 키의 극단값보다는 평균값에 더 가까워진다는 점을 수학적으로 증명했다. 그는 이 관계를 직선(linear)으로 표현했고, 그것이 바로 오늘날 우리가 사용하는 선형회귀분석(linear regression)의 출발점이 되었다.</span></p>
-<p data-end="737" data-start="562" data-ke-size="size16"><span>그렇다. <b>회귀분석이란 평균으로의 경향성을 이해하고자 하는 시도에서 출발한 것이다</b>. 그리고 이 아이디어는 오늘날까지도 유효하게 작동하고 있다. 특정 현상이 얼마나 "평균"에 가까워지려는지, 혹은 특정 변수들이 결과에 어떤 영향을 주는지를 파악하려는 모든 시도는 회귀분석의 범주에 들어가기 때문이다.</span></p>
-<h2 data-end="737" data-start="562" data-ke-size="size26"><span>2.1 Cor(공분산)과 Cov(상관계수)</span></h2>
-<p><figure class="imageblock alignLeft" data-ke-mobileStyle="widthOrigin" data-origin-width="740" data-origin-height="308"><span data-url="https://blog.kakaocdn.net/dna/cMc9F4/btsO6oeeTly/AAAAAAAAAAAAAAAAAAAAAOPWGHyzgTmDJajRecOOkwjy5iOrd1SgWXd-vy9ljovs/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=CxyKGIywjDzFdgbpkK4LN2ULJ80%3D" data-phocus="https://blog.kakaocdn.net/dna/cMc9F4/btsO6oeeTly/AAAAAAAAAAAAAAAAAAAAAOPWGHyzgTmDJajRecOOkwjy5iOrd1SgWXd-vy9ljovs/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=CxyKGIywjDzFdgbpkK4LN2ULJ80%3D" data-alt="상관계수의 해석"><img src="../../../Attachments/Tistory/36-03.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="654" height="272" data-origin-width="740" data-origin-height="308"/></span><figcaption>상관계수의 해석</figcaption>
-</figure>
-</p>
-<p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16"><span>그렇다면 골턴이 말한 이 "평균으로 돌아가는" 경향성은 <b>어떻게 수학적으로 표현</b>될 수 있을까?</span></p>
-<p data-end="403" data-start="258" data-ke-size="size16"><span>두 변수(예: 부모의 키, 자녀의 키) 사이의 관계를 설명하려면 단순히 평균값만으로는 부족하다. 우리는 <b>하나의 값이 증가할 때, 다른 값도 함께 증가하거나 감소하는 패턴</b>을 알아야 한다. 이때 등장하는 개념이 바로 <b>공분산(Covariance)</b>이다.</span></p>
-<p data-end="508" data-start="405" data-ke-size="size16"><span>공분산은 두 변수 간의 <b>변동 방향</b>을 나타낸다. 만약 두 값이 함께 증가하거나 함께 감소한다면 공분산은 양수가 되고, 반대로 한 값이 증가할 때 다른 값이 감소한다면 음수가 된다.</span></p>
-<p data-end="686" data-start="510" data-ke-size="size16"><span>하지만<b> 공분산은 단위의 영향을 받기 때문에, 해석하기가 어렵다</b>. 예를 들어 키(cm)와 수입(원)의 공분산은 그 자체로는 해석이 힘들다. 그래서 <b>단위를 없애고 두 변수 간의 관계 강도를 -1과 1 사이로 정규화한 값</b>이 필요해지는데, 그것이 바로 <b>상관계수(Correlation coefficient)</b>다.</span></p>
-<h2 data-end="686" data-start="510" data-ke-size="size26"><span>2.2 SLR 모델의 기본형태, OLS 의 기본개념&nbsp;</span></h2>
-<h3 data-ke-size="size23"><span>2.2.1) SLR 형태의 기본 형태 </span></h3>
-<p><figure class="imageblock alignLeft" data-ke-mobileStyle="widthOrigin" data-origin-width="1200" data-origin-height="675"><span data-url="https://blog.kakaocdn.net/dna/cObJBg/btsO6MeAlUp/AAAAAAAAAAAAAAAAAAAAAHPRVfxC5VqCt6rdxoe88watdQq-I6_p1iZX4rZy3Ohg/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=72Hh4MqddjCUTrt3IFBtI6kbePQ%3D" data-phocus="https://blog.kakaocdn.net/dna/cObJBg/btsO6MeAlUp/AAAAAAAAAAAAAAAAAAAAAHPRVfxC5VqCt6rdxoe88watdQq-I6_p1iZX4rZy3Ohg/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=72Hh4MqddjCUTrt3IFBtI6kbePQ%3D" data-alt="SLR 형태의 기본"><img src="../../../Attachments/Tistory/36-04.jpg" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="397" height="223" data-origin-width="1200" data-origin-height="675"/></span><figcaption>SLR 형태의 기본</figcaption>
-</figure>
-</p>
-<p data-end="232" data-start="164" data-ke-size="size16">&nbsp;</p>
-<p data-end="232" data-start="164" data-ke-size="size16"><span>우리는 앞서 평균으로의 회귀, 공분산과 상관계수에 대해 살펴봤다. 이제 그 관계를 <b>수학적으로 표현</b>해보자.</span></p>
-<p data-end="289" data-start="234" data-ke-size="size16"><span>단순선형회귀(Simple Linear Regression, SLR)의 기본 형태는 다음과 같다:</span></p>
-<h3 data-ke-size="size23"><span>y=&beta;0+&beta;1x+&epsilon;</span></h3>
-<p data-end="340" data-start="336" data-ke-size="size16"><span>여기서,</span></p>
-<ul data-end="484" data-start="341" data-ke-list-type="disc">
-<li data-end="369" data-start="341"><span>y: 종속변수 (예측하고자 하는 값)</span></li>
-<li data-end="393" data-start="370"><span><span aria-hidden="true">x</span>: 독립변수 (설명 변수)</span></li>
-<li data-end="425" data-start="394"><span>&beta;0<span aria-hidden="true">​</span>: 절편 (Intercept)</span></li>
-<li data-end="454" data-start="426"><span>&beta;1<span aria-hidden="true">​</span>: 기울기 (Slope)</span></li>
-<li data-end="484" data-start="455"><span>&epsilon;: 오차항 (에러)</span></li>
-</ul>
-<p data-end="582" data-start="486" data-ke-size="size16"><span>이 수식은 간단하게 말해<b>, <u>"x가 1만큼 변할 때 y는 평균적으로 얼마나 변하는가?"</u></b>를 나타내는 식이다.</span><br /><span>즉, <b>변수 간의 관계를 직선 형태로 설명하는 모델이다.&nbsp;</b></span></p>
-<h3 data-ke-size="size23"><span>2.2.2) OLS 의 기본개념&nbsp;</span></h3>
-<p data-ke-size="size16"><span>그렇다면 이 수식 속의 &beta;0<span aria-hidden="true">​</span>와 &beta;1<span aria-hidden="true">​</span>은 어떻게 구할 수 있을까?</span></p>
-<p data-end="738" data-start="689" data-ke-size="size16"><span>바로<b> 최소제곱법(OLS)을 사용한다.</b> OLS의 핵심 아이디어는 다음과 같다:</span></p>
-<blockquote data-end="833" data-start="740" data-ke-style="style3">
-<p data-end="833" data-start="742" data-ke-size="size16"><b>"관측값 yi와 예측값 yi_hat 사이의 차이인 잔차(residual)를 제곱해서 모두 더한 값(잔차제곱합, SSE)을 최소화하자."<br /></b>-&gt; 어려운 말처럼 보이지만 상식적으로 생각해보자, 오차를 줄이는게 우리의 목표임을 생각하면, 오차를 최소화 하는 선을 긋는것 그것이 우리의 궁극적인 목표인것 또한 알수 있다<br /><br /></p>
-<figure class="imageblock alignLeft" data-ke-mobileStyle="widthOrigin" data-origin-width="556" data-origin-height="382"><span data-url="https://blog.kakaocdn.net/dna/df45HF/btsO7GLrqqA/AAAAAAAAAAAAAAAAAAAAAFHqhMSqBehA8X_nNndQUhlKKKkBx1AtkhY5CQ5i4udx/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=uiPItygH3z0jiCnnv5CcQqkdBIA%3D" data-phocus="https://blog.kakaocdn.net/dna/df45HF/btsO7GLrqqA/AAAAAAAAAAAAAAAAAAAAAFHqhMSqBehA8X_nNndQUhlKKKkBx1AtkhY5CQ5i4udx/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=uiPItygH3z0jiCnnv5CcQqkdBIA%3D" data-alt="그림에 표현된 것처럼, OLS는 데이터 포인트들과 회귀직선 사이의 수직 거리들을 잰 다음, 이 거리들의 제곱합을 최소화하는 직선을 찾는 과정이다.(헷갈리면 여러번 읽어보며 익숙해지자)"><img src="../../../Attachments/Tistory/36-05.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="362" height="249" data-origin-width="556" data-origin-height="382"/></span><figcaption>그림에 표현된 것처럼, OLS는 데이터 포인트들과 회귀직선 사이의 수직 거리들을 잰 다음, 이 거리들의 제곱합을 최소화하는 직선을 찾는 과정이다.(헷갈리면 여러번 읽어보며 익숙해지자)</figcaption>
-</figure>
-</blockquote>
-<p data-end="854" data-start="835" data-ke-size="size16">&nbsp;</p>
-<p data-end="854" data-start="835" data-ke-size="size16"><span>이때의 목적함수는 다음과 같습니다:</span></p>
-<p><figure class="imageblock alignLeft" data-ke-mobileStyle="widthOrigin" data-origin-width="1000" data-origin-height="1042"><span data-url="https://blog.kakaocdn.net/dna/dcbXx4/btsPbku52IA/AAAAAAAAAAAAAAAAAAAAAAfunyY4A0AqGHnoaE4gSsDTuqBQNxLoVSgllG3ms1xI/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=H90hThwlVxWuexFtuQb7ZG7BjM0%3D" data-phocus="https://blog.kakaocdn.net/dna/dcbXx4/btsPbku52IA/AAAAAAAAAAAAAAAAAAAAAAfunyY4A0AqGHnoaE4gSsDTuqBQNxLoVSgllG3ms1xI/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=H90hThwlVxWuexFtuQb7ZG7BjM0%3D"><img src="../../../Attachments/Tistory/36-06.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="623" height="1042" data-origin-width="1000" data-origin-height="1042"/></span></figure>
-</p>
-<p data-end="964" data-start="935" data-ke-size="size16"><span>이를 미분하여 최적화하면 다음과 같은 해를 얻습니다:</span></p>
-<p><figure class="imageblock alignLeft" data-ke-mobileStyle="widthOrigin" data-origin-width="1144" data-origin-height="1000"><span data-url="https://blog.kakaocdn.net/dna/NFuYl/btsPbJBkBlZ/AAAAAAAAAAAAAAAAAAAAALD2ijF7xke1VRzIGYKuwdbgUarlZzHyOWKhtFivNgoX/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=vwIm%2FvX6nTBp2Bf7lN%2FZ0pthLjs%3D" data-phocus="https://blog.kakaocdn.net/dna/NFuYl/btsPbJBkBlZ/AAAAAAAAAAAAAAAAAAAAALD2ijF7xke1VRzIGYKuwdbgUarlZzHyOWKhtFivNgoX/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=vwIm%2FvX6nTBp2Bf7lN%2FZ0pthLjs%3D"><img src="../../../Attachments/Tistory/36-07.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="482" height="421" data-origin-width="1144" data-origin-height="1000"/></span></figure>
-</p>
-<p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16"><span>+ BLUE 에 관한 내용 추가 필요&nbsp;</span></p>
-<ul data-ke-list-type="disc">
-<li data-end="894" data-start="866">데이터가 <b>선형 회귀 가정</b>에 잘 맞고,</li>
-<li data-end="929" data-start="895">오차항이 <b>정규분포 + 등분산 + 독립성</b>을 만족할 때</li>
-</ul>
-<p data-ke-size="size16"><b>OLS는 BLUE (Best Linear Unbiased Estimator)임</b><br /><b>&rarr; 즉, 선형 추정자 중 가장 좋은 거</b></p>
-<p data-ke-size="size16">&nbsp;</p>
-<h3 data-end="1244" data-start="1186" data-ke-size="size23"><span>2.2.3)추정된 오차의 분산</span></h3>
-<p data-end="1364" data-start="1254" data-ke-size="size16"><span>회귀분석에서 빠질 수 없는 또 하나의 핵심 개념은 바로 <b>오차항의 분산</b>이다. 아무리 데이터를 가장 잘 설명하는 직선을 그렸다고 해도, 모든 점들이 그 직선 위에 딱 맞아떨어지지는 않는다. 이때 각 점이 직선에서 얼마나 떨어져 있는지를 수치화한 것이 바로<b> 잔차제곱합(SSE)</b>이고, 이 값을 통해 <b>오차항의 분산</b>을 추정할 수 있다</span></p>
-<p><figure class="imageblock alignLeft" data-ke-mobileStyle="widthOrigin" data-origin-width="1576" data-origin-height="1000"><span data-url="https://blog.kakaocdn.net/dna/bLBus2/btsPbrVfScx/AAAAAAAAAAAAAAAAAAAAAHgov1yBSbZ2w_g7JDWK390HeE7nwNlLVYsrsa5GTT6-/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=UibUFAHGeZnEoPGXM27Ga01nMrs%3D" data-phocus="https://blog.kakaocdn.net/dna/bLBus2/btsPbrVfScx/AAAAAAAAAAAAAAAAAAAAAHgov1yBSbZ2w_g7JDWK390HeE7nwNlLVYsrsa5GTT6-/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=UibUFAHGeZnEoPGXM27Ga01nMrs%3D"><img src="../../../Attachments/Tistory/36-08.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="502" height="319" data-origin-width="1576" data-origin-height="1000"/></span></figure>
-</p>
-<p data-end="463" data-start="376" data-ke-size="size16"><span>여기서 n은 샘플 수고, 회귀계수 두 개 (&beta;0,&beta;1)를 추정했기 때문에 자유도는 n&minus;2가 된다.</span></p>
-<p data-end="531" data-start="465" data-ke-size="size16"><span>이 추정된 분산은 단순히 모델의 품질을 평가하는 지표일 뿐 아니라, <b>가설검정과 신뢰구간 계산의 기초</b>로도 쓰인다.</span></p>
-<h2 data-end="578" data-start="538" data-ke-size="size26"><span>2.3 표준오차, T-test, 신뢰구간과 SLR의 연관성</span></h2>
-<p data-ke-size="size16"><b><span>b0,b1 구하면 끝일까? 당연히 아니다</span></b></p>
-<p data-end="844" data-start="754" data-ke-size="size16"><span>우린 항상 통계적 접근을 할 필요가 있다, 매번 의심해야 한다</span></p>
-<p data-end="844" data-start="754" data-ke-size="size16"><span>과연 구한 b0,b1 값이 우연이 아닐까? 그렇다 <b>우린 구한 값에 대해 검증을 해야한다&nbsp;</b></span></p>
-<p data-end="844" data-start="754" data-ke-size="size16"><span><b>검증을 위해선 분포를 알아야하고 분포를 알기 위해선 분산을 알아야 한다 그 과정을 따라가 보자</b>&nbsp;</span></p>
-<p><figure class="imageblock alignLeft" data-ke-mobileStyle="widthOrigin" data-filename="스크린샷 2025-07-11 오후 2.52.40.png" data-origin-width="1593" data-origin-height="627"><span data-url="https://blog.kakaocdn.net/dna/dt8lcw/btsPfcpVmJ4/AAAAAAAAAAAAAAAAAAAAAJlY3K2yZlWsOB4AkaBA-j--ZxMcAOjmm138tn5dRbrj/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=LpY%2Fetz6L0ElVIFWsHMxUIiIUys%3D" data-phocus="https://blog.kakaocdn.net/dna/dt8lcw/btsPfcpVmJ4/AAAAAAAAAAAAAAAAAAAAAJlY3K2yZlWsOB4AkaBA-j--ZxMcAOjmm138tn5dRbrj/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=LpY%2Fetz6L0ElVIFWsHMxUIiIUys%3D" data-alt="b0,b1의 분포"><img src="../../../Attachments/Tistory/36-09.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="524" height="206" data-filename="스크린샷 2025-07-11 오후 2.52.40.png" data-origin-width="1593" data-origin-height="627"/></span><figcaption>b0,b1의 분포</figcaption>
-</figure>
-</p>
-<h3 data-end="866" data-start="851" data-ke-size="size23"><span>2.3.1) T-검정</span></h3>
-<p data-end="928" data-start="868" data-ke-size="size16"><span>설명변수 x가 결과 y에 정말 영향을 주는지를 검정하기 위해 다음의 귀<span>무가설을 세운다:</span></span></p>
-<p><figure class="imageblock alignLeft" data-ke-mobileStyle="widthOrigin" data-filename="스크린샷 2025-07-11 오후 2.55.55.png" data-origin-width="1067" data-origin-height="207"><span data-url="https://blog.kakaocdn.net/dna/bfOwBU/btsPfq2yKR2/AAAAAAAAAAAAAAAAAAAAABje35Wy3ctlzlT4v7-rd8uWUDcgh4hEgTn6H3vK6YJ9/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=D58%2Fl8GOn78Q%2Bv%2FYjtIWdymclWY%3D" data-phocus="https://blog.kakaocdn.net/dna/bfOwBU/btsPfq2yKR2/AAAAAAAAAAAAAAAAAAAAABje35Wy3ctlzlT4v7-rd8uWUDcgh4hEgTn6H3vK6YJ9/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=D58%2Fl8GOn78Q%2Bv%2FYjtIWdymclWY%3D"><img src="../../../Attachments/Tistory/36-10.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="577" height="112" data-filename="스크린샷 2025-07-11 오후 2.55.55.png" data-origin-width="1067" data-origin-height="207"/></span></figure>
-</p>
-<p data-end="928" data-start="868" data-ke-size="size16">&nbsp;</p>
-<p data-end="998" data-start="984" data-ke-size="size16"><span>검정통계량은 다음과 같다:</span></p>
-<p><figure class="imageblock alignLeft" data-ke-mobileStyle="widthOrigin" data-filename="스크린샷 2025-07-11 오후 2.56.41.png" data-origin-width="856" data-origin-height="907"><span data-url="https://blog.kakaocdn.net/dna/bFTZD1/btsPdz0XzKF/AAAAAAAAAAAAAAAAAAAAAGxbQLsCfsQdzX8yZdHJRV-7y1bK4F2TI0Z8ecl9jo6N/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=%2FT1CNkrkJ0supH1KxNHKiUDI8VY%3D" data-phocus="https://blog.kakaocdn.net/dna/bFTZD1/btsPdz0XzKF/AAAAAAAAAAAAAAAAAAAAAGxbQLsCfsQdzX8yZdHJRV-7y1bK4F2TI0Z8ecl9jo6N/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=%2FT1CNkrkJ0supH1KxNHKiUDI8VY%3D"><img src="../../../Attachments/Tistory/36-11.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="564" height="598" data-filename="스크린샷 2025-07-11 오후 2.56.41.png" data-origin-width="856" data-origin-height="907"/></span></figure>
-</p>
-<h3 data-end="1175" data-start="1160" data-ke-size="size23"><span>2.3.2) 신뢰구간</span></h3>
-<p data-end="1277" data-start="1177" data-ke-size="size16"><span>또한 &beta;^1\hat{\beta}_1<span aria-hidden="true">&beta;^​1​</span>에 대한 불확실성을 수치로 표현하기 위해 <b>신뢰구간(confidence interval)</b> 을 계산한다. 95% 신뢰구간이라면 다음과 같다:</span></p>
-<p><figure class="imageblock alignLeft" data-ke-mobileStyle="widthOrigin" data-filename="스크린샷 2025-07-11 오후 2.57.52.png" data-origin-width="682" data-origin-height="237"><span data-url="https://blog.kakaocdn.net/dna/cRlD9R/btsPeas8Def/AAAAAAAAAAAAAAAAAAAAAHu4cQmwWbtllKNoVO0-Qc6Fe3yFte-ny28eC2c8Ld8p/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=X9xw2UvRkFPNXoFlAXtv529JVYg%3D" data-phocus="https://blog.kakaocdn.net/dna/cRlD9R/btsPeas8Def/AAAAAAAAAAAAAAAAAAAAAHu4cQmwWbtllKNoVO0-Qc6Fe3yFte-ny28eC2c8Ld8p/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=X9xw2UvRkFPNXoFlAXtv529JVYg%3D"><img src="../../../Attachments/Tistory/36-12.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="417" height="145" data-filename="스크린샷 2025-07-11 오후 2.57.52.png" data-origin-width="682" data-origin-height="237"/></span></figure>
-</p>
-<h4 data-end="1486" data-start="1447" data-ke-size="size20"><span>회귀모형의 불확실성을 이해하기 위해 우리는 다음과 같은 흐름을 밟는다:</span></h4>
-<blockquote data-end="1538" data-start="1488" data-ke-style="style3">
-<p data-end="1538" data-start="1490" data-ke-size="size16">오차 추정 &rarr; 회귀계수의 표준오차 &rarr; T-값 계산 &rarr; 유의미한지 판단 &rarr; 신뢰구간 설정</p>
-</blockquote>
-<p data-end="1666" data-start="1540" data-ke-size="size16">&nbsp;</p>
-<p data-end="1666" data-start="1540" data-ke-size="size16"><span>이 모든 과정은 단순히 선을 그리는 것에 그치지 않고, <b>그 선이 얼마나 신뢰할 수 있는지를 정량적으로 판단</b>할 수 있게 해준다. 이게 바로 SLR이 단순한 도구를 넘어서, <b>통계적 추론</b>의 강력한 무기가 되는 이유다.</span></p>
-<h3 data-end="160" data-start="127" data-ke-size="size23"><span>2.4 예측: 평균 반응과 개별 값에 대한 예측</span><span></span></h3>
-<p data-end="239" data-start="162" data-ke-size="size16"><span>회귀모형을 통해 단순히 계수만 추정하고 끝나는 게 아니다. </span></p>
-<p data-end="239" data-start="162" data-ke-size="size16"><span>우리가 회귀분석을 하는 진짜 이유는 <b>미래를 예측하고 싶은 욕구</b> 때문이다.</span></p>
-<p data-end="294" data-start="241" data-ke-size="size16"><span>그렇다면 새로운 x=x0<span aria-hidden="true">​</span>가 주어졌을 때, 우리가 예측할 수 있는 건 두 가지다:</span></p>
-<p><figure class="imageblock alignLeft" data-ke-mobileStyle="widthOrigin" data-filename="스크린샷 2025-07-11 오후 3.03.20.png" data-origin-width="421" data-origin-height="531"><span data-url="https://blog.kakaocdn.net/dna/bM3ZSG/btsPebZSCUm/AAAAAAAAAAAAAAAAAAAAAHcLrlmlEJVi0UfzWJNz5LqZJwwaTboZQKKvjjle8gq2/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=ctck0WGU4ZBmQ%2FFuHjh4vDYY7iM%3D" data-phocus="https://blog.kakaocdn.net/dna/bM3ZSG/btsPebZSCUm/AAAAAAAAAAAAAAAAAAAAAHcLrlmlEJVi0UfzWJNz5LqZJwwaTboZQKKvjjle8gq2/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=ctck0WGU4ZBmQ%2FFuHjh4vDYY7iM%3D" data-alt="평균에 대한 예측과 개별에 대한 예측"><img src="../../../Attachments/Tistory/36-13.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="311" height="531" data-filename="스크린샷 2025-07-11 오후 3.03.20.png" data-origin-width="421" data-origin-height="531"/></span><figcaption>평균에 대한 예측과 개별에 대한 예측</figcaption>
-</figure>
-</p>
-<h4 data-end="322" data-start="301" data-ke-size="size20"><span>평균 반응에 대한 예측</span></h4>
-<p data-end="400" data-start="324" data-ke-size="size16"><span>x0라는 특정 값에서 <b>평균적으로 기대<b>되는 반응값<span>&nbsp;&mu;0</span><span aria-hidden="true">​</span><span>을 알고 싶다면 아래와 같은 신뢰구간을 설정한다:</span></b></b></span></p>
-<p><figure class="imageblock alignLeft" data-ke-mobileStyle="widthOrigin" data-filename="스크린샷 2025-07-11 오후 3.04.22.png" data-origin-width="787" data-origin-height="562"><span data-url="https://blog.kakaocdn.net/dna/b7Y4iO/btsPfvCyAb2/AAAAAAAAAAAAAAAAAAAAADZhrfI22YBCKKJJ5OAHDfgUuoiwgmDrrgx_D3hAkXTC/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=W2GKGit5HYXNEA9uqu1NmPKLIFc%3D" data-phocus="https://blog.kakaocdn.net/dna/b7Y4iO/btsPfvCyAb2/AAAAAAAAAAAAAAAAAAAAADZhrfI22YBCKKJJ5OAHDfgUuoiwgmDrrgx_D3hAkXTC/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=W2GKGit5HYXNEA9uqu1NmPKLIFc%3D"><img src="../../../Attachments/Tistory/36-14.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="390" height="279" data-filename="스크린샷 2025-07-11 오후 3.04.22.png" data-origin-width="787" data-origin-height="562"/></span></figure>
-</p>
-<p data-end="595" data-start="552" data-ke-size="size16">&nbsp;</p>
-<p data-end="595" data-start="552" data-ke-size="size16"><span>이건 말 그대로 "이런 조건에서 평균적으로 얼마쯤 나올까?"에 대한 예측이다.</span></p>
-<h4 data-end="624" data-start="602" data-ke-size="size20"><span>개별 관측값에 대한 예측</span></h4>
-<p data-end="702" data-start="626" data-ke-size="size16"><span>반면, <b>어떤 하나의 새로운 관측값</b> y0를 예측하고 싶다면 변동성이 훨씬 크기 때문에 표준오차 계산식에 1이 더해진다:</span></p>
-<p><figure class="imageblock alignLeft" data-ke-mobileStyle="widthOrigin" data-filename="스크린샷 2025-07-11 오후 3.05.17.png" data-origin-width="719" data-origin-height="448"><span data-url="https://blog.kakaocdn.net/dna/DLboF/btsPeK8zW7X/AAAAAAAAAAAAAAAAAAAAAGAH49-SxOiyC5PPz7YtO-_BZZ_s0kvBKWJuqq2dp0ZY/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=TyfNuYicFUJkg8Y25O0Kl44vf7k%3D" data-phocus="https://blog.kakaocdn.net/dna/DLboF/btsPeK8zW7X/AAAAAAAAAAAAAAAAAAAAAGAH49-SxOiyC5PPz7YtO-_BZZ_s0kvBKWJuqq2dp0ZY/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=TyfNuYicFUJkg8Y25O0Kl44vf7k%3D"><img src="../../../Attachments/Tistory/36-15.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="368" height="229" data-filename="스크린샷 2025-07-11 오후 3.05.17.png" data-origin-width="719" data-origin-height="448"/></span></figure>
-</p>
-<p data-end="895" data-start="805" data-ke-size="size16">&nbsp;</p>
-<p data-end="895" data-start="805" data-ke-size="size16"><span>이건 "새로운 손님이 올 때 실제 매출은 얼마나 될까?" 같은 질문에 답하기 위한 예측이다. </span></p>
-<p data-end="895" data-start="805" data-ke-size="size16"><span>평균 반응보다 불확실성이 크므로 <b>더 넓은 신뢰구간</b>이 생성된다. -&gt; 따라서 개별값에 대한 예측의 범위가 더 넓다</span></p>
-<h3 data-end="937" data-start="902" data-ke-size="size23"><span>2.5 결정계수 R^2: 회귀선의 설명력</span></h3>
-<p data-end="1014" data-start="939" data-ke-size="size16"><span>마지막으로, 우리가 만든 회귀선이 실제 데이터를 얼마나 잘 설명하는지를 수치화해주는 지표가 바로 결정계수 R^2이다.</span></p>
-<ul data-end="1160" data-start="1067" data-ke-list-type="disc">
-<li data-end="1099" data-start="1067"><span>SST: 총 변동 (데이터 전체의 총 분산)</span></li>
-<li data-end="1126" data-start="1100"><span>SSR: 회귀에 의해 설명된 변동</span></li>
-<li data-end="1160" data-start="1127"><span>SSE: 잔차의 제곱합 (설명되지 못한 부분)</span></li>
-</ul>
-<p><figure class="imageblock alignLeft" data-ke-mobileStyle="widthOrigin" data-filename="스크린샷 2025-07-11 오후 3.13.46.png" data-origin-width="1191" data-origin-height="608"><span data-url="https://blog.kakaocdn.net/dna/KMZLM/btsPe0XH5oe/AAAAAAAAAAAAAAAAAAAAAJelWVAbvhaD22KD3h71aCgJ-J6bEDIaBxf79e3jOAeb/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=C17uutH%2F%2FquWwvQe4fXIxzeXvsw%3D" data-phocus="https://blog.kakaocdn.net/dna/KMZLM/btsPe0XH5oe/AAAAAAAAAAAAAAAAAAAAAJelWVAbvhaD22KD3h71aCgJ-J6bEDIaBxf79e3jOAeb/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=C17uutH%2F%2FquWwvQe4fXIxzeXvsw%3D"><img src="../../../Attachments/Tistory/36-16.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="431" height="220" data-filename="스크린샷 2025-07-11 오후 3.13.46.png" data-origin-width="1191" data-origin-height="608"/></span></figure>
-</p>
-<p data-end="1245" data-start="1162" data-ke-size="size16">&nbsp;</p>
-<p data-end="1245" data-start="1162" data-ke-size="size16"><span>즉, <span>R^2</span>는 전체 변동 중 회귀모형이 얼마나 많은 부분을 <b>설명하고 있는지를 백분율로 나타낸 값</b>이다. 그래서 다음의 범위를 가진다:</span></p>
-<p><figure class="imageblock alignLeft" data-ke-mobileStyle="widthOrigin" data-filename="스크린샷 2025-07-11 오후 3.14.38.png" data-origin-width="1490" data-origin-height="300"><span data-url="https://blog.kakaocdn.net/dna/bPXAfi/btsPeLfncio/AAAAAAAAAAAAAAAAAAAAALPnIilGdHvZHP6R9JBZ7kmcEqDZub8al2ea_MwUKZTh/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=oaMEz1%2FT4pi6RtRAYFxZ6KRuKRA%3D" data-phocus="https://blog.kakaocdn.net/dna/bPXAfi/btsPeLfncio/AAAAAAAAAAAAAAAAAAAAALPnIilGdHvZHP6R9JBZ7kmcEqDZub8al2ea_MwUKZTh/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=oaMEz1%2FT4pi6RtRAYFxZ6KRuKRA%3D"><img src="../../../Attachments/Tistory/36-17.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="517" height="104" data-filename="스크린샷 2025-07-11 오후 3.14.38.png" data-origin-width="1490" data-origin-height="300"/></span></figure>
-</p>
-<blockquote data-ke-style="style3">R^2 = <span aria-hidden="true">0</span>: 회귀선이 아무 설명도 못 한다는 뜻.<br />R^2 = 1: 데이터가 완벽히 직선 위에 있다는 뜻 (즉, 완벽한 설명).</blockquote>
-<h2 data-ke-size="size26"><span>연습문제, 결과표 해석하기</span></h2>
-<p><figure class="imageblock alignLeft" data-ke-mobileStyle="widthOrigin" data-filename="스크린샷 2025-07-11 오후 2.44.39.png" data-origin-width="1086" data-origin-height="1296"><span data-url="https://blog.kakaocdn.net/dna/mXAja/btsPd7pl7uP/AAAAAAAAAAAAAAAAAAAAAPHAACzEY5fqKTRPJ8kx1TfHUoJpL0IBEG2PPAZD25Ff/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=q2x5mQ%2BXc9c416RdkDZgiklDRCs%3D" data-phocus="https://blog.kakaocdn.net/dna/mXAja/btsPd7pl7uP/AAAAAAAAAAAAAAAAAAAAAPHAACzEY5fqKTRPJ8kx1TfHUoJpL0IBEG2PPAZD25Ff/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=q2x5mQ%2BXc9c416RdkDZgiklDRCs%3D"><img src="../../../Attachments/Tistory/36-18.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="776" height="926" data-filename="스크린샷 2025-07-11 오후 2.44.39.png" data-origin-width="1086" data-origin-height="1296"/></span></figure>
-</p>
-<h2 data-ke-size="size26"><span>마무리&nbsp;</span></h2>
-<p data-ke-size="size16"><span>지금까지 우리는 단순 선형 회귀(SLR)를 구성하는 핵심 요소들을 차근차근 살펴봤다.</span></p>
-<p data-ke-size="size16"><span>이제는 그 흐름과 더불어 구체적 내용또한 명확히 알아야 한다.&nbsp;</span></p>
-<blockquote data-ke-style="style3">공분산과 상관계수를 통해 변수 간의 관계 방향과 강도를 이해했고,<br />OLS(최소제곱법)을 통해 가장 잘 맞는 직선을 어떻게 찾는지를 살펴봤으며(회귀계수를 구하는법 또한 알아보았다),<br />오차의 분산 추정,&nbsp;표준오차,&nbsp;t-검정,&nbsp;신뢰구간을 통해 회귀계수의 유의성과 신뢰도를 평가하는 법도 배웠다.<br />마지막으로&nbsp;예측과 결정계수 R^2를 통해 이 회귀모형이 얼마나 잘 작동하는지를 수치로 확인하는 방법까지 다뤘다.</blockquote>
-<!-- 수식 렌더링을 위한 MathJax 스크립트 -->
+<https://nevermind22.tistory.com/35>
+
+[회귀분석 시작 전 꼭 알아야 할 개념과 흐름 TV 광고를 많이 하면 정말 매출이 오를까?지금 매출 데이터를 보면, 다음 달에는 얼마나 팔릴까?이런 질문들은 모두 하나의 공통된 갈증에서 시작된다.지금의 현상을 더 잘 이해하고, 앞으로를 nevermind22.tistory.com](https://nevermind22.tistory.com/35)
+
+앞서 적은 글에서 모델의 종류는 크게 2가지 가 있다고 했다 \
+단순 선형 회귀와 
+
+다중 선형 회귀 
+
+다중을 이해하기 위해선 **단순의 구조를 확실히 알아야 한다.** \
+따라서 이번 시간엔 단순 선형 회귀를 이해하기 위한 선행지식을 알고 \
+SLR 을 이해해보는 시간을 가져보고자 한다 
+
+> 2. SLR(Simple Linear Regression) 의 이해 
+> 2.1 Cor(공분산)과 Cov(상관계수) 
+> 2.2 SLR 모델의 기본형태, OLS 의 기본개념 
+> 2.3 표준편차, T-test, 신뢰구간 과 SLR의 연관성 
+> 2.4 예측 
+> 2.5 R^2 (적합성의 측정)
+
+## **2. SLR(Simple Linear Regression) 의 이해**
+
+![](../../../Attachments/Tistory/36-01.webp)
+
+프랜시스 골턴 (Francis Galton) '평균으로의 회귀'(regression to the mean
+
+"회귀"라는 말은 원래 '어떤 상태로 돌아간다'는 의미를 가지고 있다. 그렇다면 **선형회귀**는 어디로 돌아간다는 걸까?
+
+이 질문에 대한 실마리는 19세기 생물학자 프랜시스 골턴(Francis Galton)의 연구에서 시작된다.
+
+그는 부모의 키가 매우 크거나 작을 경우, 자녀의 키는 부모보다 **평균에 가까워지는 경향이 있다는 사실**을 발견했다. 이 현상을 설명하기 위해 **"평균으로의 회귀(regression to the mean)"** 라는 용어를 처음으로 사용했다.
+
+![](../../../Attachments/Tistory/36-02.webp)
+
+극단값으로 회귀하는 대표적인 예시 , 우리는 평균으로의 회귀를 다룰거다
+
+골턴은 205명의 부모와 930명의 자녀 키 데이터를 분석한 끝에, 키는 유전적인 영향을 받되, 자녀의 키는 부모 키의 극단값보다는 평균값에 더 가까워진다는 점을 수학적으로 증명했다. 그는 이 관계를 직선(linear)으로 표현했고, 그것이 바로 오늘날 우리가 사용하는 선형회귀분석(linear regression)의 출발점이 되었다.
+
+그렇다. **회귀분석이란 평균으로의 경향성을 이해하고자 하는 시도에서 출발한 것이다**. 그리고 이 아이디어는 오늘날까지도 유효하게 작동하고 있다. 특정 현상이 얼마나 "평균"에 가까워지려는지, 혹은 특정 변수들이 결과에 어떤 영향을 주는지를 파악하려는 모든 시도는 회귀분석의 범주에 들어가기 때문이다.
+
+## 2.1 Cor(공분산)과 Cov(상관계수)
+
+![](../../../Attachments/Tistory/36-03.png)
+
+상관계수의 해석
+
+그렇다면 골턴이 말한 이 "평균으로 돌아가는" 경향성은 **어떻게 수학적으로 표현**될 수 있을까?
+
+두 변수(예: 부모의 키, 자녀의 키) 사이의 관계를 설명하려면 단순히 평균값만으로는 부족하다. 우리는 **하나의 값이 증가할 때, 다른 값도 함께 증가하거나 감소하는 패턴**을 알아야 한다. 이때 등장하는 개념이 바로 **공분산(Covariance)** 이다.
+
+공분산은 두 변수 간의 **변동 방향**을 나타낸다. 만약 두 값이 함께 증가하거나 함께 감소한다면 공분산은 양수가 되고, 반대로 한 값이 증가할 때 다른 값이 감소한다면 음수가 된다.
+
+하지만 **공분산은 단위의 영향을 받기 때문에, 해석하기가 어렵다**. 예를 들어 키(cm)와 수입(원)의 공분산은 그 자체로는 해석이 힘들다. 그래서 **단위를 없애고 두 변수 간의 관계 강도를 -1과 1 사이로 정규화한 값**이 필요해지는데, 그것이 바로 **상관계수(Correlation coefficient)** 다.
+
+## 2.2 SLR 모델의 기본형태, OLS 의 기본개념
+
+### 2.2.1) SLR 형태의 기본 형태
+
+![](../../../Attachments/Tistory/36-04.jpg)
+
+SLR 형태의 기본
+
+우리는 앞서 평균으로의 회귀, 공분산과 상관계수에 대해 살펴봤다. 이제 그 관계를 **수학적으로 표현**해보자.
+
+단순선형회귀(Simple Linear Regression, SLR)의 기본 형태는 다음과 같다:
+
+### y=β0+β1x+ε
+
+여기서,
+
+- y: 종속변수 (예측하고자 하는 값)
+- x: 독립변수 (설명 변수)
+- β0​: 절편 (Intercept)
+- β1​: 기울기 (Slope)
+- ε: 오차항 (에러)
+
+이 수식은 간단하게 말해 **, "x가 1만큼 변할 때 y는 평균적으로 얼마나 변하는가?"** 를 나타내는 식이다.\
+즉, **변수 간의 관계를 직선 형태로 설명하는 모델이다.** 
+
+### 2.2.2) OLS 의 기본개념
+
+그렇다면 이 수식 속의 β0​와 β1​은 어떻게 구할 수 있을까?
+
+바로 **최소제곱법(OLS)을 사용한다.** OLS의 핵심 아이디어는 다음과 같다:
+
+> **"관측값 yi와 예측값 yi_hat 사이의 차이인 잔차(residual)를 제곱해서 모두 더한 값(잔차제곱합, SSE)을 최소화하자."**\
+> -> 어려운 말처럼 보이지만 상식적으로 생각해보자, 오차를 줄이는게 우리의 목표임을 생각하면, 오차를 최소화 하는 선을 긋는것 그것이 우리의 궁극적인 목표인것 또한 알수 있다
+> 
+>
+> ![](../../../Attachments/Tistory/36-05.png)
+>
+> 그림에 표현된 것처럼, OLS는 데이터 포인트들과 회귀직선 사이의 수직 거리들을 잰 다음, 이 거리들의 제곱합을 최소화하는 직선을 찾는 과정이다.(헷갈리면 여러번 읽어보며 익숙해지자)
+
+이때의 목적함수는 다음과 같습니다:
+
+![](../../../Attachments/Tistory/36-06.png)
+
+이를 미분하여 최적화하면 다음과 같은 해를 얻습니다:
+
+![](../../../Attachments/Tistory/36-07.png)
+
+\+ BLUE 에 관한 내용 추가 필요 
+
+- 데이터가 **선형 회귀 가정**에 잘 맞고,
+- 오차항이 **정규분포 + 등분산 + 독립성**을 만족할 때
+
+**OLS는 BLUE (Best Linear Unbiased Estimator)임**\
+**→ 즉, 선형 추정자 중 가장 좋은 거**
+
+### 2.2.3)추정된 오차의 분산
+
+회귀분석에서 빠질 수 없는 또 하나의 핵심 개념은 바로 **오차항의 분산**이다. 아무리 데이터를 가장 잘 설명하는 직선을 그렸다고 해도, 모든 점들이 그 직선 위에 딱 맞아떨어지지는 않는다. 이때 각 점이 직선에서 얼마나 떨어져 있는지를 수치화한 것이 바로 **잔차제곱합(SSE)** 이고, 이 값을 통해 **오차항의 분산**을 추정할 수 있다
+
+![](../../../Attachments/Tistory/36-08.png)
+
+여기서 n은 샘플 수고, 회귀계수 두 개 (β0,β1)를 추정했기 때문에 자유도는 n−2가 된다.
+
+이 추정된 분산은 단순히 모델의 품질을 평가하는 지표일 뿐 아니라, **가설검정과 신뢰구간 계산의 기초**로도 쓰인다.
+
+## 2.3 표준오차, T-test, 신뢰구간과 SLR의 연관성
+
+**b0,b1 구하면 끝일까? 당연히 아니다**
+
+우린 항상 통계적 접근을 할 필요가 있다, 매번 의심해야 한다
+
+과연 구한 b0,b1 값이 우연이 아닐까? 그렇다 **우린 구한 값에 대해 검증을 해야한다** 
+
+**검증을 위해선 분포를 알아야하고 분포를 알기 위해선 분산을 알아야 한다 그 과정을 따라가 보자** 
+
+![](../../../Attachments/Tistory/36-09.png)
+
+b0,b1의 분포
+
+### 2.3.1) T-검정
+
+설명변수 x가 결과 y에 정말 영향을 주는지를 검정하기 위해 다음의 귀무가설을 세운다:
+
+![](../../../Attachments/Tistory/36-10.png)
+
+검정통계량은 다음과 같다:
+
+![](../../../Attachments/Tistory/36-11.png)
+
+### 2.3.2) 신뢰구간
+
+또한 β^1\hat{\beta}_1β^​1​에 대한 불확실성을 수치로 표현하기 위해 **신뢰구간(confidence interval)** 을 계산한다. 95% 신뢰구간이라면 다음과 같다:
+
+![](../../../Attachments/Tistory/36-12.png)
+
+#### 회귀모형의 불확실성을 이해하기 위해 우리는 다음과 같은 흐름을 밟는다:
+
+> 오차 추정 → 회귀계수의 표준오차 → T-값 계산 → 유의미한지 판단 → 신뢰구간 설정
+
+이 모든 과정은 단순히 선을 그리는 것에 그치지 않고, **그 선이 얼마나 신뢰할 수 있는지를 정량적으로 판단**할 수 있게 해준다. 이게 바로 SLR이 단순한 도구를 넘어서, **통계적 추론**의 강력한 무기가 되는 이유다.
+
+### 2.4 예측: 평균 반응과 개별 값에 대한 예측
+
+회귀모형을 통해 단순히 계수만 추정하고 끝나는 게 아니다.
+
+우리가 회귀분석을 하는 진짜 이유는 **미래를 예측하고 싶은 욕구** 때문이다.
+
+그렇다면 새로운 x=x0​가 주어졌을 때, 우리가 예측할 수 있는 건 두 가지다:
+
+![](../../../Attachments/Tistory/36-13.png)
+
+평균에 대한 예측과 개별에 대한 예측
+
+#### 평균 반응에 대한 예측
+
+x0라는 특정 값에서 **평균적으로 기대되는 반응값 μ0​을 알고 싶다면 아래와 같은 신뢰구간을 설정한다:**
+
+![](../../../Attachments/Tistory/36-14.png)
+
+이건 말 그대로 "이런 조건에서 평균적으로 얼마쯤 나올까?"에 대한 예측이다.
+
+#### 개별 관측값에 대한 예측
+
+반면, **어떤 하나의 새로운 관측값** y0를 예측하고 싶다면 변동성이 훨씬 크기 때문에 표준오차 계산식에 1이 더해진다:
+
+![](../../../Attachments/Tistory/36-15.png)
+
+이건 "새로운 손님이 올 때 실제 매출은 얼마나 될까?" 같은 질문에 답하기 위한 예측이다.
+
+평균 반응보다 불확실성이 크므로 **더 넓은 신뢰구간**이 생성된다. -> 따라서 개별값에 대한 예측의 범위가 더 넓다
+
+### 2.5 결정계수 R^2: 회귀선의 설명력
+
+마지막으로, 우리가 만든 회귀선이 실제 데이터를 얼마나 잘 설명하는지를 수치화해주는 지표가 바로 결정계수 R^2이다.
+
+- SST: 총 변동 (데이터 전체의 총 분산)
+- SSR: 회귀에 의해 설명된 변동
+- SSE: 잔차의 제곱합 (설명되지 못한 부분)
+
+![](../../../Attachments/Tistory/36-16.png)
+
+즉, R^2는 전체 변동 중 회귀모형이 얼마나 많은 부분을 **설명하고 있는지를 백분율로 나타낸 값**이다. 그래서 다음의 범위를 가진다:
+
+![](../../../Attachments/Tistory/36-17.png)
+
+> R^2 = 0: 회귀선이 아무 설명도 못 한다는 뜻.\
+> R^2 = 1: 데이터가 완벽히 직선 위에 있다는 뜻 (즉, 완벽한 설명).
+
+## 연습문제, 결과표 해석하기
+
+![](../../../Attachments/Tistory/36-18.png)
+
+## 마무리
+
+지금까지 우리는 단순 선형 회귀(SLR)를 구성하는 핵심 요소들을 차근차근 살펴봤다.
+
+이제는 그 흐름과 더불어 구체적 내용또한 명확히 알아야 한다. 
+
+> 공분산과 상관계수를 통해 변수 간의 관계 방향과 강도를 이해했고,\
+> OLS(최소제곱법)을 통해 가장 잘 맞는 직선을 어떻게 찾는지를 살펴봤으며(회귀계수를 구하는법 또한 알아보았다),\
+> 오차의 분산 추정, 표준오차, t-검정, 신뢰구간을 통해 회귀계수의 유의성과 신뢰도를 평가하는 법도 배웠다.\
+> 마지막으로 예측과 결정계수 R^2를 통해 이 회귀모형이 얼마나 잘 작동하는지를 수치로 확인하는 방법까지 다뤘다.
