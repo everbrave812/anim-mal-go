@@ -1,3 +1,34 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+// 홈 소개 영역
+body[data-slug="index"] article > .markdown-preview-view > p:first-child img {
+  display: block;
+  width: min(100%, 440px);
+  max-height: 380px;
+  margin: 0 auto 2rem;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+// 모든 글이 들어 있는 Blog 껍데기는 감추고 그 안의 분류부터 바로 보여준다.
+.explorer-ul
+  > li:has(> .folder-container[data-folderpath="Blog/index"])
+  > .folder-container {
+  display: none;
+}
+
+.explorer-ul
+  > li:has(> .folder-container[data-folderpath="Blog/index"])
+  > .folder-outer {
+  visibility: visible;
+  grid-template-rows: 1fr;
+}
+
+.explorer-ul
+  > li:has(> .folder-container[data-folderpath="Blog/index"])
+  > .folder-outer
+  > ul {
+  margin-left: 0;
+  padding-left: 0;
+  border-left: 0;
+}

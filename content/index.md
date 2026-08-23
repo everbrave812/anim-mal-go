@@ -1,9 +1,11 @@
 ---
 title: 아님말고
-description: 배운 것을 내 언어로 다시 설명하는 공간
+description: 머리가 썩 좋지 않아서 안적으면 까먹습니다
 unlisted: true
 ---
 
-배운 것을 내 언어로 다시 설명하는 공간입니다.
+![아님말고 블로그 대표 이미지](attachments/blog-profile.jpg)
 
-아직 이사 중입니다.
+머리가 썩 좋지 않아서 안적으면 까먹습니다
+
+[포트폴리오](https://dust-fear-e12.notion.site/)
