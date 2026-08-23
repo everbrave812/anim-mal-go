@@ -12,20 +12,20 @@ body[data-slug="index"] article > .markdown-preview-view > p:first-child img {
 
 // 모든 글이 들어 있는 Blog 껍데기는 감추고 그 안의 분류부터 바로 보여준다.
 .explorer-ul
-  > li:has(> .folder-container[data-folderpath="Blog/index"])
+  > li:has(> .folder-container[data-folderpath="blog/index" i])
   > .folder-container {
   display: none;
 }
 
 .explorer-ul
-  > li:has(> .folder-container[data-folderpath="Blog/index"])
+  > li:has(> .folder-container[data-folderpath="blog/index" i])
   > .folder-outer {
   visibility: visible;
   grid-template-rows: 1fr;
 }
 
 .explorer-ul
-  > li:has(> .folder-container[data-folderpath="Blog/index"])
+  > li:has(> .folder-container[data-folderpath="blog/index" i])
   > .folder-outer
   > ul {
   margin-left: 0;
