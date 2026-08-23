@@ -28,12 +28,12 @@ publish: true
 <p class="og-host" data-ke-size="size16">www.romanpichler.com</p>
 </div>
 </a></figure>
-<p data-ke-size="size16"><span style="background-color: #ffffff; color: #0f172a; text-align: left;">프로덕트 블로그계의 바이블이라고도 불리는 이 블로그는 구글로 검색하면 광고없이도 매번 상단에 위치하는 유용한 블로그다. 상품을 개발하고 만드는 과정에 관한 유익한 글도 많지만, 그가 팀을 꾸리고 키우고 성장시키는 과정에서 배운 여러가지 경험과 지혜를 공유해 더더욱 유명해진 블로그 이기도 하다.&nbsp;</span></p>
+<p data-ke-size="size16"><span>프로덕트 블로그계의 바이블이라고도 불리는 이 블로그는 구글로 검색하면 광고없이도 매번 상단에 위치하는 유용한 블로그다. 상품을 개발하고 만드는 과정에 관한 유익한 글도 많지만, 그가 팀을 꾸리고 키우고 성장시키는 과정에서 배운 여러가지 경험과 지혜를 공유해 더더욱 유명해진 블로그 이기도 하다.&nbsp;</span></p>
 <p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16"><span style="background-color: #ffffff; color: #0f172a; text-align: left;">그리고 그 첫번째 글은 프로덕트 전략에 관련한 글이다&nbsp;</span></p>
+<p data-ke-size="size16"><span>그리고 그 첫번째 글은 프로덕트 전략에 관련한 글이다&nbsp;</span></p>
 <p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16"><span style="background-color: #ffffff; color: #0f172a; text-align: left;">&lt;본문 시작&gt;&nbsp;</span></p>
-<p data-ke-size="size16"><span style="background-color: #ffffff; color: #0f172a; text-align: left;"><a href="https://www.romanpichler.com/blog/my-product-strategy-model/" target="_blank" rel="noopener&nbsp;noreferrer">https://www.romanpichler.com/blog/my-product-strategy-model/</a></span></p>
+<p data-ke-size="size16"><span>&lt;본문 시작&gt;&nbsp;</span></p>
+<p data-ke-size="size16"><span><a href="https://www.romanpichler.com/blog/my-product-strategy-model/" target="_blank" rel="noopener&nbsp;noreferrer">https://www.romanpichler.com/blog/my-product-strategy-model/</a></span></p>
 <figure id="og_1706436619619" contenteditable="false" data-ke-type="opengraph" data-ke-align="alignCenter" data-og-type="article" data-og-title="Roman's Product Strategy Model" data-og-description="This article describes the product strategy model Roman has developed to make effective strategic decisions and achieve product success." data-og-host="www.romanpichler.com" data-og-source-url="https://www.romanpichler.com/blog/my-product-strategy-model/" data-og-url="https://www.romanpichler.com/blog/my-product-strategy-model/" data-og-image=""><a href="https://www.romanpichler.com/blog/my-product-strategy-model/" target="_blank" rel="noopener" data-source-url="https://www.romanpichler.com/blog/my-product-strategy-model/">
 <div class="og-image" style="background-image: url();">&nbsp;</div>
 <div class="og-text">
@@ -42,9 +42,9 @@ publish: true
 <p class="og-host" data-ke-size="size16">www.romanpichler.com</p>
 </div>
 </a></figure>
-<p data-ke-size="size16"><span style="color: #000000; text-align: start;">Read more at:<span>&nbsp;</span></span><a href="https://www.romanpichler.com/blog/my-product-strategy-model/">https://www.romanpichler.com/blog/my-product-strategy-model/</a><br /><span style="color: #000000; text-align: start;">Copyright &copy; Pichler Consulting</span></p>
+<p data-ke-size="size16"><span>Read more at:<span>&nbsp;</span></span><a href="https://www.romanpichler.com/blog/my-product-strategy-model/">https://www.romanpichler.com/blog/my-product-strategy-model/</a><br /><span>Copyright &copy; Pichler Consulting</span></p>
 <p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16"><b><span style="color: #000000; text-align: start;">PRODUCT STRATEGY MODEL</span></b><br /><span style="color: #000000; text-align: start;"></span></p>
+<p data-ke-size="size16"><b><span>PRODUCT STRATEGY MODEL</span></b><br /><span></span></p>
 <p data-ke-size="size16">&nbsp;</p>
 <p data-ke-size="size16">제품 성공을 위해서 올바른 전략적 결정은 매우 중요하다. 만약 제품의 <b>가치제안이나 특별한장점이 확실하지 않으면</b> 비즈니스적으로 가치를 창출하기란 어려울 것이다 (학부 1년때 포터의 5forces, SWOT을 주구장창 시키는데는 이유가 있다... ) 그럼 실제 비즈니스 세계에서는 교과서 같은 전략이 사용될까? 그렇지 않다. 오히려 더 나쁜 상황이다. 저자는 많은 프로덕트 팀이 제품전략을 만들거나 진화시키기 위해 <b>체계적인 접근방식을 사용하지 않는다</b>는 것을 알게 되었다. 즉 실전에서 사용하기 위한 제품 전략 모델이 부족했고. 이 글을 통해 저자가 직접 개발한 모델에 대해 설명하고자 한다</p>
 <p data-ke-size="size16">&nbsp;</p>
@@ -53,11 +53,11 @@ publish: true
 <p><figure class="imageblock alignLeft" data-ke-mobileStyle="widthOrigin" data-origin-width="1280" data-origin-height="701"><span data-url="https://blog.kakaocdn.net/dna/33Vwb/btsD6uuj5Ql/AAAAAAAAAAAAAAAAAAAAAPlEfoYULcL-OZq34OhV8A8qO39LQWchIs1Qz0H9RSSM/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=V7fxikSfqLrFi51NSgrbOXqYiRk%3D" data-phocus="https://blog.kakaocdn.net/dna/33Vwb/btsD6uuj5Ql/AAAAAAAAAAAAAAAAAAAAAPlEfoYULcL-OZq34OhV8A8qO39LQWchIs1Qz0H9RSSM/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=V7fxikSfqLrFi51NSgrbOXqYiRk%3D" data-alt="그림 1"><img src="../../Attachments/Tistory/23-01.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="700" height="383" data-origin-width="1280" data-origin-height="701"/></span><figcaption>그림 1</figcaption>
 </figure>
 </p>
-<p data-ke-size="size16"><span style="color: #000000; text-align: start;">Four Artefacts</span><br />그림 1 모델의 핵심은 4가지 모델에 있다. t<span style="color: #000000; text-align: start;">he product vision, the product strategy, the product roadmap, 그리고 the product backlog가 그 핵심이다.&nbsp;</span><br /><br /></p>
-<p data-ke-size="size16">1. t<span style="color: #000000; text-align: start;">he product vision</span></p>
-<p data-ke-size="size16">제품 비전이란 제품이 가져올 긍정적인 변화, 이를 만드는 궁극적 이유와 목적을 설명한다. 이는 제품과 관련된 모든 사람들(이해관계자, 주주, 개발팀 etc)에게 방향을 제시하고 안내하는 북극점(어떤 상황이 오더라도 추구해야할 바뀌지 않는 방향)이다. 예를 들어 당신이 사람들의 식습관을 발전시키기 위한 제품을 제공한다고 가정하면. 이때 제품 비전은 "사람들이 건강하게 먹는걸 돕는다"가 될 수 있다.&nbsp;<span style="color: #000000; text-align: start;"></span></p>
+<p data-ke-size="size16"><span>Four Artefacts</span><br />그림 1 모델의 핵심은 4가지 모델에 있다. t<span>he product vision, the product strategy, the product roadmap, 그리고 the product backlog가 그 핵심이다.&nbsp;</span><br /><br /></p>
+<p data-ke-size="size16">1. t<span>he product vision</span></p>
+<p data-ke-size="size16">제품 비전이란 제품이 가져올 긍정적인 변화, 이를 만드는 궁극적 이유와 목적을 설명한다. 이는 제품과 관련된 모든 사람들(이해관계자, 주주, 개발팀 etc)에게 방향을 제시하고 안내하는 북극점(어떤 상황이 오더라도 추구해야할 바뀌지 않는 방향)이다. 예를 들어 당신이 사람들의 식습관을 발전시키기 위한 제품을 제공한다고 가정하면. 이때 제품 비전은 "사람들이 건강하게 먹는걸 돕는다"가 될 수 있다.&nbsp;<span></span></p>
 <p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16">2. <span style="color: #000000; text-align: start;">The product strategy</span><br />제품 전략은 비전을 실현하고 성공적으로 제품을 만들기 위한 접근방식을 전달하며 이를 실현시키기 위해선 4가지의 중요한 선택을 해야한다&nbsp;</p>
+<p data-ke-size="size16">2. <span>The product strategy</span><br />제품 전략은 비전을 실현하고 성공적으로 제품을 만들기 위한 접근방식을 전달하며 이를 실현시키기 위해선 4가지의 중요한 선택을 해야한다&nbsp;</p>
 <p data-ke-size="size16">&nbsp;</p>
 <p data-ke-size="size16">1) Need</p>
 <p data-ke-size="size16">제품이 해결해(제공해)줄수 있는 니즈를 정의해야 한다. 위에서 설명한 예시를 활용하자면 우리가 제공하는 건강한 식단은 2형 당뇨병 발병의 위험을 막을 수 있다.&nbsp;</p>
