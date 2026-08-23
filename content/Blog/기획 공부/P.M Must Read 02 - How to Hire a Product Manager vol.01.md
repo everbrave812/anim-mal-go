@@ -93,3 +93,8 @@ PM이 없어도 조직은 잘 돌아갑니다(적어도 한동안은), 하지만
 <https://chobopark.tistory.com/222> 
 
 [\[쉬운설명\] 소프트웨어 생명주기 정리!! (정의,단계,종류) 소프트웨어 생명주기의 정의와 단계, 종류에 대해 정리해보았습니다. 저도 이해할 만큼 쉽게 정리해 봤으니, 모두에게 도움이 되었으면 좋겠습니다. 소프트웨어 생명주기(Software Development Life Cyc chobopark.tistory.com](https://chobopark.tistory.com/222)
+
+## 관련 글
+
+- [[P.M Must Read 02 - How to Hire a Product Manager vol.02]]
+- [[유저 인터뷰 총정리 1탄, 유저 인터뷰 기초 개념과 인터뷰 준비]]

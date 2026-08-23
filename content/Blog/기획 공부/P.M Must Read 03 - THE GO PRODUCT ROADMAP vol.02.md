@@ -48,3 +48,8 @@ publish: true
  
 
 (해당하는 부분은 이후 KPI 설정과 관련하여 더 디테일 하게 다루고자 합니다, 지금의 설명으로는 저 스스로도 이해가 잘 안 되고 있네요.. 부족한 번역 읽어주셔서 감사합니다)
+
+## 관련 글
+
+- [[P.M Must Read 03 - THE GO PRODUCT ROADMAP vol.01]]
+- [[P.M Must Read 01 - ROMAN’S PRODUCT STRATEGY MODEL vol.02]]

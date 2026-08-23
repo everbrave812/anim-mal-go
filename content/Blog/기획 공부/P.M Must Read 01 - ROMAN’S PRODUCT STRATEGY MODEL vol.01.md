@@ -95,3 +95,8 @@ Four Artefacts\
 다음주는 그림 2에 대한 해석을 계속하도록 하겠다
 
 p.s 생각보다 passive는 생략되는 경우가 많다..
+
+## 관련 글
+
+- [[P.M Must Read 01 - ROMAN’S PRODUCT STRATEGY MODEL vol.02]]
+- [[P.M Must Read 03 - THE GO PRODUCT ROADMAP vol.01]]

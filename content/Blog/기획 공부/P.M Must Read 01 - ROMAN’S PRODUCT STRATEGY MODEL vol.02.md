@@ -99,3 +99,8 @@ Teamwork
  
 
 그림 4에서 볼 수 있듯 프로덕트에 책임이 있는 사람은 전략 워크샵과 올바른 의사결정을 만들어 내고. 스크럼 마스터 혹은 에자일 코치의 경우 모든사람이 참여하고 어느 하나가 큰 목소리를 가지지 않도록 세션을 구성해야 한다.
+
+## 관련 글
+
+- [[P.M Must Read 01 - ROMAN’S PRODUCT STRATEGY MODEL vol.01]]
+- [[P.M Must Read 03 - THE GO PRODUCT ROADMAP vol.01]]
