@@ -1,16 +1,8 @@
 ---
 title: Ridge, Lasso와 Overfitting
-description: Ridge와 Lasso의 작동 원리에서 Bias-Variance Trade-off와 Overfitting까지
 date: 2026-08-23
-tags:
-  - 머신러닝
-  - 회귀분석
-  - Ridge
-  - Lasso
-  - Overfitting
-draft: false
+publish: true
 ---
-
 ### Motivation   
 
 나는 중,고등학교때 수학을 싫어했다. 사실 그럴만도 한게 수학을 공부하는 방법 자체를 전혀 몰랐다.  
