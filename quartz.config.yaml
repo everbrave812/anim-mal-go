@@ -4,7 +4,9 @@ configuration:
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
-  analytics: null
+  analytics:
+    provider: google
+    tagId: G-FHQ4ZRY45W
   locale: ko-KR
   baseUrl: everbrave812.github.io/anim-mal-go
   ignorePatterns:
