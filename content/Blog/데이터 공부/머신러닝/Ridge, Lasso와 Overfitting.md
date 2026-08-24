@@ -15,7 +15,7 @@ publish: true
   
 분명히 말하고 싶은건 도착 지점이 over fitting 이라는 것이지, 그 과정속에서 우리가 거쳐가는 많은 개념들이 단순히 'over-fitting 을 이해하기 위한 무언가' 라고 생각하진 않았으면 좋겠다. 하나하나 그 과정을 온전히 경험하길 바란다.   
   
-(해당 글은 University of Melbourne, Statistical Machine Learning (COMP90051)의 3주차 수업내용을 기반으로 작성되었다)  
+(해당 글은 University of Melbourne, Statistical Machine Learning (COMP90051)의 3주차 1차시 수업내용을 기반으로 작성되었다)  
   
 ### 목차  
   
