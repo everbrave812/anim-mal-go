@@ -2,6 +2,8 @@
 title: 'P.M Must Read 02 : How to Hire a Product Manager vol.02'
 date: 2024-02-25
 publish: true
+aliases:
+  - 'Blog/기획 공부/P.M Must Read 02 - How to Hire a Product Manager vol.02'
 ---
 
 이전 글 

@@ -2,6 +2,8 @@
 title: 'SLR, 단순선형회귀 이해하기'
 date: 2025-07-11
 publish: true
+aliases:
+  - 'Blog/데이터 공부/통계/SLR, 단순선형회귀 이해하기'
 ---
 
 <https://nevermind22.tistory.com/35>

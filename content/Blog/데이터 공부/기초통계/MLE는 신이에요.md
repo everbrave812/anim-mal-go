@@ -2,6 +2,8 @@
 title: 'MLE는 신이에요'
 date: 2025-07-14
 publish: true
+aliases:
+  - 'Blog/데이터 공부/통계/MLE는 신이에요'
 ---
 
 ![](../../../Attachments/Tistory/38-01.png)

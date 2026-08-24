@@ -2,6 +2,8 @@
 title: 'P.M Must Read 03 : THE GO PRODUCT ROADMAP vol.01'
 date: 2024-03-03
 publish: true
+aliases:
+  - 'Blog/기획 공부/P.M Must Read 03 - THE GO PRODUCT ROADMAP vol.01'
 ---
 
 들어가기 전

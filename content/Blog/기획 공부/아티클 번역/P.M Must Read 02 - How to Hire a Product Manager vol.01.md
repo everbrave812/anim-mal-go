@@ -2,6 +2,8 @@
 title: 'P.M Must Read 02 : How to Hire a Product Manager vol.01'
 date: 2024-02-11
 publish: true
+aliases:
+  - 'Blog/기획 공부/P.M Must Read 02 - How to Hire a Product Manager vol.01'
 ---
 
 오늘 번역할 글은 이미 테크 씬에서 너무 유명한 명불허전 Ken Norton의 가장 유명한 에세이인 How to hire a product manager" 입니다. 구글에서 PM 으로 근무하면서 우리가 현재 쓰고있는 Google Docs, Google Calendar 및 Google Mobile Maps 팀에서 일했습니다. (그냥 레전드..)

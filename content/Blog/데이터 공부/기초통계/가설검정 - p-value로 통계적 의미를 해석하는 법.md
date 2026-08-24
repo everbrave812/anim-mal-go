@@ -2,6 +2,8 @@
 title: '가설검정 : p-value로 통계적 의미를 해석하는 법'
 date: 2025-07-03
 publish: true
+aliases:
+  - 'Blog/데이터 공부/통계/가설검정 - p-value로 통계적 의미를 해석하는 법'
 ---
 
 ## Chapter 09. 가설검정 (Hypothesis Testing)

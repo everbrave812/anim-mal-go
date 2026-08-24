@@ -2,6 +2,8 @@
 title: PCA, 고차원 데이터를 가장 잘 설명하는 축 찾기
 date: 2026-08-24
 publish: true
+aliases:
+  - 'Blog/데이터 공부/머신러닝/PCA 원리 이해하기'
 description: 고차원 데이터를 가장 잘 설명하는 축을 찾는 PCA의 원리와 과정을 직관과 수식으로 이해한다.
 ---
 ### Motivation

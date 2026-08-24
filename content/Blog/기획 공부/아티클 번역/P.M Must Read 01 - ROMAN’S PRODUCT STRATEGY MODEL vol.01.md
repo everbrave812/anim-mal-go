@@ -2,6 +2,8 @@
 title: 'P.M Must Read 01 : ROMAN’S PRODUCT STRATEGY MODEL vol.01'
 date: 2024-01-29
 publish: true
+aliases:
+  - 'Blog/기획 공부/P.M Must Read 01 - ROMAN’S PRODUCT STRATEGY MODEL vol.01'
 ---
 
 **P.M Must Read** 
