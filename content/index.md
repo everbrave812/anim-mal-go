@@ -1,6 +1,7 @@
 ---
 title: 아님말고
 description: 머리가 썩 좋지 않아서 안적으면 까먹습니다
+publish: true
 unlisted: true
 ---
 
