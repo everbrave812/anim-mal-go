@@ -208,9 +208,11 @@ $$ y_i(w^\top x_i+b)\geq1 $$
 Lagrangian의 표준형에 맞추기 위해 다음처럼 바꾼다, 즉 데이터 포인트 하나하나가 이런식으로 표현된다고 생각하면 된다 (오분류를 허용하지 않음)
 $$ \boxed{ 1-y_i(w^\top x_i+b)\leq0. } $$
 #### 2단계 Lagrangian과 KKT 조건 
-각 데이터의 제약조건에 $\lambda_i\geq0$를 붙입니다.
+
+각 데이터의 제약조건에 $\lambda_i\geq0$를 붙인다.
 $$ \boxed{ \mathcal L(w,b,\lambda) = \frac12\lVert w\rVert^2 + \sum_{i=1}^{n} \lambda_i \left[ 1-y_i(w^\top x_i+b) \right]. } $$
-직관적으로 $\lambda_i$는 다음을 나타냅니다.
+
+직관적으로 $\lambda_i$는 다음을 나타낸다.
 $i$번째 데이터의 제약조건이 최종 경계를 결정하는 데 얼마나 관여하는가? -> 식을 보면 제약조건의 가중치의 역할을 한다.
 
 KKT 조건 4가지
@@ -234,7 +236,7 @@ $$ y_i(w^\top x_i+b)>1 $$
 $$ 1-y_i(w^\top x_i+b)<0. $$
 따라서 곱을 0으로 만들려면
 $$ \lambda_i=0 $$
-이어야 합니다. 이 점은 $w$에 직접 기여하지 않습니다.
+이어야 합니다. 이 점은 $w$에 직접 기여하지 않는다.
 
 $\lambda_i>0$인 점
 $$ \lambda_i>0 $$
@@ -242,7 +244,7 @@ $$ \lambda_i>0 $$
 $$ 1-y_i(w^\top x_i+b)=0, $$
 따라서
 $$ y_i(w^\top x_i+b)=1. $$
-즉, margin boundary 위에 있는 support vector입니다. 
+즉, margin boundary 위에 있는 support vector이다. 
 
 꽤 놀랍지 않은가. 람다 라는 변수를 추가해서 우린 서포트 벡터를 추정할수 있다. 이런 Dual 의 특성으로 인해 해당 function 을 사용하는거다
 
@@ -422,7 +424,7 @@ $$ \boxed{K(u,v)=(uv+c)^2} $$
 
 만 계산해도 완전히 같은 결과를 얻을수 있다. 즉 우린 고차원 계산을 직접 할필요가 없다. 따라서 계산 효율성은 챙기면서 고차원 문제를 손쉽게 해결할수 있는거다. 이를 커널 트릭이라 하며 오늘 배움의 종착역이다. (이 방식 하나면 매우 높은 고차원의 $\phi$를 직접 계산하지 않아도 된다 n차원 계산의 편리함)
 
-전체 연결은 다음 한 줄로 정리됩니다.
+전체 연결은 다음 한 줄로 정리된다.
 
 $$ \boxed{ x_i^\top x_j \longrightarrow \phi(x_i)^\top\phi(x_j) \longrightarrow K(x_i,x_j) } $$ 
 
