@@ -1,7 +1,7 @@
 ---
 title: Untitled
 date: 2026-08-25
-publish: false
+publish: true
 ---
 ### Motivation
 
@@ -742,8 +742,11 @@ $$ \begin{aligned} a^\top Ma &= a_1^2+4a_1a_2+6a_1a_3 +4a_2^2+12a_2a_3+9a_3^2\\ 
 
 $$ \boxed{ \text{저차원 비선형 문제} \xrightarrow{\text{Dual 내적 변환}} x_i^\top x_j \xrightarrow{\text{Kernel Trick}} K(x_i, x_j) \xrightarrow{\text{고차원 연산 생략}} \text{비선형 분리 완성} } $$ 
 커널 방법론은 데이터 공간을 확장해 문제를 단순화하는 가장 우아한 수학적 오의다. 비록 $O(N^2)$의 메모리·연산 한계로 인해 대규모 데이터에서는 딥러닝에 자리를 넘겨주었지만, 데이터가 적고 명확한 전역 최적해(Global Optimum)와 수학적 보장이 필요한 문제에서는 여전히 가장 강력한 머신러닝 무기 중 하나다.
+
 ## 관련 글
 
 <!-- AUTO-RELATED:START -->
-<!-- 블로그 게시 시 자동으로 채워지는 영역 -->
+- [[PCA 이해하기]]
+- [[Ridge, Lasso와 Overfitting]]
+- [[MLE는 신이에요]]
 <!-- AUTO-RELATED:END -->
