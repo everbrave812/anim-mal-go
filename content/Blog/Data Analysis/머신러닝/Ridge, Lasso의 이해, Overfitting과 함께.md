@@ -1,5 +1,5 @@
 ---
-title: Ridge, Lasso와 Overfitting
+title: Ridge, Lasso의 이해, Overfitting과 함께
 date: 2026-08-23
 publish: true
 ---
