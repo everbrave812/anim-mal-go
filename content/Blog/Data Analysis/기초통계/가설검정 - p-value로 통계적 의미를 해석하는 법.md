@@ -5,7 +5,6 @@ publish: true
 aliases:
   - 'Blog/데이터 공부/통계/가설검정 - p-value로 통계적 의미를 해석하는 법'
 ---
-
 ## Chapter 09. 가설검정 (Hypothesis Testing)
 
 ![](../../../Attachments/Tistory/33-01.png)
@@ -52,8 +51,6 @@ aliases:
   → 진짜 변화를 못 알아본 상황
 
 ![](../../../Attachments/Tistory/33-02.png)
-
-
 
 ![](../../../Attachments/Tistory/33-03.png)
 

@@ -32,3 +32,63 @@ body[data-slug="index"] article > .markdown-preview-view > p:first-child img {
   padding-left: 0;
   border-left: 0;
 }
+
+// 기술 글 본문: 한글 행 길이와 수식 블록을 읽기 편하게 유지한다.
+body:not([data-slug="index"]) .center > article {
+  max-width: 760px;
+  margin-inline: auto;
+  font-size: 1.06rem;
+  line-height: 1.75;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+body:not([data-slug="index"]) .center > article p {
+  margin-block: 0 1.2rem;
+}
+
+body:not([data-slug="index"]) .center > article h2,
+body:not([data-slug="index"]) .center > article h3,
+body:not([data-slug="index"]) .center > article h4 {
+  line-height: 1.45;
+  text-wrap: balance;
+}
+
+body:not([data-slug="index"]) .center > article .katex {
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+body:not([data-slug="index"]) .center > article .katex-display {
+  display: block;
+  width: 100%;
+  margin: 1.4rem 0;
+  padding: 0.35rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  text-align: center;
+}
+
+body:not([data-slug="index"]) .center > article .katex-display > .katex {
+  display: inline-block;
+  max-width: none;
+  white-space: nowrap;
+  text-align: initial;
+}
+
+body:not([data-slug="index"]) .center > article img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+}
+
+@media all and ($mobile) {
+  body:not([data-slug="index"]) .center > article {
+    max-width: 100%;
+    font-size: 1rem;
+    line-height: 1.72;
+  }
+}

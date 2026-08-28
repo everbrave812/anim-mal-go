@@ -5,7 +5,6 @@ publish: true
 aliases:
   - 'Blog/기획 공부/P.M Must Read 01 - ROMAN’S PRODUCT STRATEGY MODEL vol.01'
 ---
-
 **P.M Must Read** 
 
 새롭게 시작한 컨텐츠다..!
@@ -59,7 +58,6 @@ Model
 
 Four Artefacts\
 그림 1 모델의 핵심은 4가지 모델에 있다. the product vision, the product strategy, the product roadmap, 그리고 the product backlog가 그 핵심이다. 
-
 
 1. the product vision
 

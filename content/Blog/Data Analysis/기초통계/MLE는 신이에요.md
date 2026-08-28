@@ -5,7 +5,6 @@ publish: true
 aliases:
   - 'Blog/데이터 공부/통계/MLE는 신이에요'
 ---
-
 ![](../../../Attachments/Tistory/38-01.png)
 
 MLE는 항상 강했고, 앞으로도 그럴거다

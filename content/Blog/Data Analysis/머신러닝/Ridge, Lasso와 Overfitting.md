@@ -10,15 +10,15 @@ publish: true
 일단 문제집을 피고 -> 문제를 읽고 모르겠다면 바로 답을 본다 -> **답지의 풀이 방법을 통으로 암기한다** -> 다음 문제로 넘어간다   
 이렇게 되면 난 이해보다 **문제집의 답**을 외우게 되고, 실제 시험장에 들어가서 보는 문제들은 전부 나한테 새로운 문제들이었다.   
 이런 문제는 머신러닝에도 똑같이 적용이 된다. '**문제집의 답을 과도하게 암기해서, 실제 시험 문제를 못푸는 상황', 이게 흔히 말하는 over fitting 이다.**   
-  
+
 하지만, 오늘 over-fitting 이라는 주제는 글의 마지막에야 등장할 것이다. 'over-fitting을 단순히 수학문제를 많이 외운것' 이라는 비유 하나로 설명하긴 싫다. 시작은 아마 선형회귀의 본질적인 문제 (ill posed prob) 로 접근해 보고자 한다. 이후 해당 문제를 어떻게 풀어낼수 있는지, 그리고 그 해법인 Ridge Lasso 회귀의 작동원리, 자연스럽게 이어지는 모델복잡도를 기반으로한 Bias-Variance Trade-off 로 over fitting 에 대해 설명해볼 것이며 최근의 개념인 Double Descent 로 글을 마무리 지어보고자 한다.  
-  
+
 분명히 말하고 싶은건 도착 지점이 over fitting 이라는 것이지, 그 과정속에서 우리가 거쳐가는 많은 개념들이 단순히 'over-fitting 을 이해하기 위한 무언가' 라고 생각하진 않았으면 좋겠다. 하나하나 그 과정을 온전히 경험하길 바란다.   
-  
+
 (해당 글은 University of Melbourne, Statistical Machine Learning (COMP90051)의 3주차 1차시 수업내용을 기반으로 작성되었다)  
-  
+
 ### 목차  
-  
+
 ill posed prob 이란 무엇인가   
 어떻게 해결할수 있을까   
 L1 Regularization / L2 Regularization   
@@ -26,10 +26,10 @@ Ridge - Lasso Graph 이해하기
 Bias-Variance Trade-off 와 double descent 
 
 ### ILL posed prob 이란 무엇인가  
-  
+
 기억을 더듬어 보자, 선형회귀의 일반식을 생각해 보는거다.    
 물론 그냥 일반 회귀식 말고, 선형대수로 표현된 그 방식을 말하는거다.   
-  
+
 아마 이런 식이 머리에 떠오를 것이다.  
 
 $$
@@ -108,15 +108,15 @@ $$
 $$
 
 오늘 배울 모든건 이 식에서 시작된다.  
-  
+
 회귀분석의 메커니즘은 단순하다. **'잔차의 제곱을 최소화 한다',** 흔히 말하는 OLS 라는 이 방식은 가정들을 기반으로 작동한다. 그렇기에 학부 회귀분석에서 교수님들이 '가정들' 에 대해 열변을 토하시는것도 다 그 이유 때문이다. 크게 4가지의 가정이 있는데 (선형성, 독립성, 등분산성, 정규성) 우린 이제 이 가정을 하나씩 부셔볼 것이다. 그리고 짧은 나의 식견에 의존한 직관으로 보았을때 **회귀 파생 모델의 대부분이 이 부셔진 가정을 어떻게 처리할 것인가? 에 대한 질문을 답하기 위해 만들어 졌다고 봐도 무관할듯 싶다.**   
-  
+
 가정을 먼저 부셔도 되지만, 나는 수식을 먼저 부셔볼까 한다.    
 사실 달걀과 닭의 문제 처럼 수식이 부셔지면 가정도 무너지는 구조라, 뭘 먼저 어떻게 부셔도 상관이 없다.   
-  
+
 **만약 우리가 앞서본 회귀식에서 역행렬이 존재하지 않게 된다고 하자**,     
 그럼 아주 쉽게 해당 식을 무력화 시킬수 있다. 더 이상 선형 Equation 은 작동하지 않는다. ill posed problem은 해가 존재하지 않거나, 유일하지 않거나, 입력의 작은 변화에 해가 불안정하게 변하는 문제를 말한다. 역행렬이 존재하지 않는 경우는 그중 해가 유일하지 않게 되는 대표적인 경우이다.   
-    
+
 **그래서 뭐 어쩌라는 걸까? 이렇듯 수식만 보면 현실세계에서 점점 멀어진다. (늘 우린 수식과 현실의 세계를 왔다갔다 해야한다)    
 역행렬이 존재하지 않는 경우를 현실 데이터 분석의 세계로 가져와 보면,** 다음 두가지 경우에서 역행렬이 존재하지 않을수 있다.     
 
@@ -124,18 +124,18 @@ $$
 **2\. 변수 수 $p$가 관측치 수 $n$보다 많은 경우
 
 둘 다 현실 세계에서 너무나 있을 법한 문제이다. 따라서 우린 이 문제, 그리고 무너진 Equation을 해결해야 하는것이다. 
-  
+
 ### 어떻게 해결할수 있을까   
 
 ![409](https://blog.kakaocdn.net/dna/cv3IJF/dJMcaaNffJt/AAAAAAAAAAAAAAAAAAAAAAkmCkIobgpdYBGhqsxCWjVpjirZ_d3NfjPXv2SbeOo7/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=GmJQRxLXk%2FA2nA4wWYOq9cI%2F6XY%3D)
 
 **문제 해결의 idea : 역행렬이 없어서 문제가 발생했다면, 역행렬을 강제로 존재하게 하면 되는거 아닌가?**     
 놀랍게도 이게 해결 방법이다. 이번 목차에서 배울 내용은 역행렬을 강제하는 방법이다.   
-  
+
 사실 선형대수학 과목을 잘 들었다면, 아마 해법을 알것이다.  
 $X^\top X$의 대각성분에 $\lambda>0$을 더해주면, 역행렬을 보장할수 있다
 직관적 이해를 돕기 위해 2\*2 toy sample 을 가져왔다   
-  
+
 다음과 같은 matrix 가 있다.  
 
 $$
@@ -145,7 +145,7 @@ A=
 5 & 5
 \end{bmatrix}
 $$
-  
+
 해당경우 determinant 가 0 이기에 역행렬이 없다  
 
 $$
@@ -154,7 +154,7 @@ $$
 (5\times5)-(5\times5)
 =0
 $$
-  
+
 이제 대각행렬에 1씩 더해보자  
 
 $$
@@ -175,7 +175,7 @@ A+I
 5 & 6
 \end{bmatrix}
 $$
-  
+
 가중치를 더한 matrix 의 determinant 는 11 따라서 역행렬이 존재하게 된다  
 
 $$
@@ -185,10 +185,11 @@ $$
 =36-25
 =11
 $$
-  
+
 아이디어를 꼭 기억해두자, **이제 이슈는 더 좁혀지게 된다. 그렇다면 도대체 어떤 가중치를 어떻게 둘것인가 의 문제**로 넘어가게 된다 
-  
+
 ### L1 Regularization / L2 Regularization 그리고 목적함수  
+
 지금부터는 약간 헷갈릴 수 있는 내용이라, 결론부터 이야기할 테니 일단 그 흐름에 익숙해지자.
 
 $$
@@ -238,61 +239,106 @@ $$
 $$
 
 참고로 절편에는 규제를 적용하지 않는다. 절편을 제외한 가중치에만 규제를 적용한다 
-  
+
 이제 하나씩 목적함수를 유도해 보겠다   
-  
+
 **직관적 이해를 위해 2\*2 즉 가중치가 2개인 선형회귀를 기준으로 하였으며, 모든 matrix 를 펼쳐서 보여주는 형식으로 진행했다**  
-  
+
 2\. Ridge를 행렬로 펼치기  
 Ridge 목적함수는:  
-  
-$$ J(w) = \|y-Xw\|_2^2+\lambda\|w\|_2^2 $$  
-  
+
+$$
+J(w) = \|y-Xw\|_2^2+\lambda\|w\|_2^2
+$$
+
 이다.  
-  
+
 L2 벌점(제곱벌점)을 펼치면:  
-  
-$$ \|w\|_2^2=w^\top w $$  
-$$ = \begin{bmatrix} w_1&w_2 \end{bmatrix} \begin{bmatrix} w_1\\ w_2 \end{bmatrix} = w_1^2+w_2^2 $$
+
+$$
+\|w\|_2^2=w^\top w
+$$
+
+$$
+= \begin{bmatrix} w_1&w_2 \end{bmatrix} \begin{bmatrix} w_1\\ w_2 \end{bmatrix} = w_1^2+w_2^2
+$$
+
 따라서 전체 목적함수는:  
-$$ \boxed{ J(w_1,w_2) = \sum_{i=1}^n (y_i-x_{i1}w_1-x_{i2}w_2)^2 + \lambda(w_1^2+w_2^2) } $$
+
+$$
+\boxed{ J(w_1,w_2) = \sum_{i=1}^n (y_i-x_{i1}w_1-x_{i2}w_2)^2 + \lambda(w_1^2+w_2^2) }
+$$
+
 이다. 이제 0으로 두고 W(가중치)에 대해 편미분을 진행하면 해를 구할수 있다.   
 또한 **convex 함수이기 때문에 전역 최적해**를 보장하며, 미분을 통해 closed-form solution을 구할 수 있다.  
-  
+
 Ridge 미분  (w 에 대해 편미분 = set 0)
-$$ \nabla_wJ(w) = -2X^\top(y-Xw)+2\lambda w $$
+
+$$
+\nabla_wJ(w) = -2X^\top(y-Xw)+2\lambda w
+$$
+
 0으로 놓으면:  
-$$ -2X^\top y+2X^\top Xw+2\lambda w=0 $$
+
+$$
+-2X^\top y+2X^\top Xw+2\lambda w=0
+$$
+
 2를 제거하면:  
 $$ X^\top Xw+\lambda w=X^\top y $$ 여기서:  
-$$ \lambda w = \lambda \begin{bmatrix} w_1\\ w_2 \end{bmatrix} $$
+
+$$
+\lambda w = \lambda \begin{bmatrix} w_1\\ w_2 \end{bmatrix}
+$$
+
 이고:  
 $$ \lambda Iw = \lambda \begin{bmatrix} 1&0\\ 0&1 \end{bmatrix} \begin{bmatrix} w_1\\ w_2 \end{bmatrix} = \lambda \begin{bmatrix} w_1\\ w_2 \end{bmatrix} $$  이므로:  
-$$ X^\top Xw+\lambda Iw=X^\top y $$
+
+$$
+X^\top Xw+\lambda Iw=X^\top y
+$$
+
 $$ \boxed{ (X^\top X+\lambda I)w=X^\top y } $$ 가 된다.   
-  
+
 3\. Lasso를 펼치기  
 Lasso 목적함수는:  
-  
-$$ J(w) = \|y-Xw\|_2^2+\lambda\|w\|_1 $$
+
+$$
+J(w) = \|y-Xw\|_2^2+\lambda\|w\|_1
+$$
+
 이다.  
 L1 norm은:  
-  
-$$ \|w\|_1=|w_1|+|w_2| $$
+
+$$
+\|w\|_1=|w_1|+|w_2|
+$$
+
 이므로:  
-$$ \boxed{ J(w_1,w_2) = \sum_{i=1}^{n} (y_i-x_{i1}w_1-x_{i2}w_2)^2 + \lambda(|w_1|+|w_2|) } $$
+
+$$
+\boxed{ J(w_1,w_2) = \sum_{i=1}^{n} (y_i-x_{i1}w_1-x_{i2}w_2)^2 + \lambda(|w_1|+|w_2|) }
+$$
+
 이다.  
 
 여기서 Ridge처럼:  
-$$ X^\top X+\lambda I $$  
+
+$$
+X^\top X+\lambda I
+$$
+
 형태로 단순하게 정리할 수 없다.  
-  
+
 이유는 절댓값 때문이다. convex 함수이므로 전역 최적해는 보장되지만, $w_j=0$에서 미분이 존재하지 않아 Ridge와 같은 closed-form solution으로 단순하게 정리할 수 없다. 
-  
-$$ \frac{d}{dw_j}|w_j| = \begin{cases} 1,&w_j>0\\ -1,&w_j<0 \end{cases} $$    
+
+$$
+\frac{d}{dw_j}|w_j| = \begin{cases} 1,&w_j>0\\ -1,&w_j<0 \end{cases}
+$$
+
 $w_j=0$에서는 일반적인 미분이 존재하지 않는다.  
 따라서, subgradient, coordinate descent, proximal gradient 등의 최적화 방법론을 적용하여 해를 구해야 한다 .   
-    
+
 우린 목적함수를 정의하고, 해를 구할수 있게 되었다.   
 
 ![](https://blog.kakaocdn.net/dna/qxDqw/dJMcags7q1l/AAAAAAAAAAAAAAAAAAAAAIP9gSk1-QiKNvW9obpONNr06MGFf4p8i-biJxz1IAYm/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1788188399&allow_ip=&allow_referer=&signature=OWOk4rnj8s%2FpFa63txNh%2FkUI31w%3D)
@@ -754,7 +800,7 @@ $$
 - Ridge: $X^\top X$의 대각성분에 $\lambda$를 더해 모든 가중치를 부드럽게 축소한다.
 - Lasso: 각 가중치에서 일정한 크기를 깎고, 그 값이 0을 넘어가면 정확히 0에서 멈춘다.
 - 절편: 규제 행렬의 첫 번째 대각성분을 0으로 두기 때문에 축소되지 않는다.
-  
+
 ### Ridge-Lasso Graph 에 대해  
 
 사실 Ridge, Lasso 를 배우면서 빠질수 없는 부분이 시각화 이다. **정말 모든 교과서에 실려있는 그래프 이지만**  
@@ -770,30 +816,38 @@ $$
 4\. 도형은 어떤 의미를 가지는가   
 5\. 도형과 타원의 접점은 뭔가   
 6\. 접점이 축 위에 있는 경우는 무엇인가   
-  
+
 1\. 축의 의미 : 가로축과 세로축은 가중치이다. 
 $\hat y=\beta_1x_1+\beta_2x_2$ 가로축: $\beta_1$ 세로축: $\beta_2$ 
 따라서 점 하나가 모델 하나이다.     
-$$ (3,2) \quad\Longleftrightarrow\quad \hat y=3x_1+2x_2 $$
+
+$$
+(3,2) \quad\Longleftrightarrow\quad \hat y=3x_1+2x_2
+$$
+
 우리는 이 평면에서 가장 좋은 가중치 조합을 찾고 있다  
 
 2\. 저 빨간 타원은 뭔가 : 각 가중치 조합 $(\beta_1,\beta_2)$에 대해 훈련오차를 계산할 수 있다.    
 $$ RSS(\beta_1,\beta_2) = \sum_{i=1}^n \left( y_i-\beta_1x_{i1}-\beta_2x_{i2} \right)^2 $$  빨간 타원 하나는 **동일한 RSS를 만드는 가중치 조합들을 연결한 등고선**이다. 
 예를 들어 서로 다른 모델:  
-$$ (\beta_1,\beta_2)=(1,3) $$
+
+$$
+(\beta_1,\beta_2)=(1,3)
+$$
+
 $$ (\beta_1,\beta_2)=(2,2) $$가 똑같은 RSS를 만든다면 같은 빨간 타원 위에 위치할 수 있다.  
 같은 고도를 칠해놓은 등고선 지도로 생각하면 쉽다.  
-  
+
 -   같은 등고선: 같은 높이  
 -   같은 빨간 타원: 같은 RSS  
 -   안쪽 타원: 작은 RSS  
 -   바깥쪽 타원: 큰 RSS  
-  
+
 3\. 빨간 타원의 중심은 무엇인가? : 타원의 중심에 있는 $\hat\beta$는 **제약이 없을 때 RSS를 가장 작게 만드는 OLS 해**이다.  $$ \hat\beta_{\mathrm{OLS}} = \arg\min_\beta RSS(\beta) $$ 즉:   
 $$ \hat\beta_{\mathrm{OLS}} = \begin{bmatrix} \hat\beta_1\\ \hat\beta_2 \end{bmatrix} $$는 훈련 데이터를 가장 잘 맞추는 가중치 조합이다.  
 중심에서 멀어질수록 RSS가 증가한다.  
 Ridge나 Lasso 같은 제약이 없다면 타원의 중심인 OLS 해를 선택하면 된다.  
-  
+
 4\. 파란색 도형은 어떤 의미를 가지는가?: 파란색 도형은 **사용이 허용된 가중치의 범위**, 즉 feasible region이다.  
 Ridge의 제약은:  $$ \beta_1^2+\beta_2^2\leq t $$이다. (생긴게 그냥 원 그래프 같이 생겼다)
 이를 그래프로 그리면 원 내부가 된다. $$ \boxed{\text{Ridge}=L2=\text{원}} $$Ridge는 가중치 제곱의 합이 일정 크기를 넘지 못하게 한다. 이제 라쏘를 한번 봐보자
@@ -857,7 +911,11 @@ $$
 세로축 $\beta_2$ 위에서 접한 경우 
 점이:  $$ (\beta_1,\beta_2)=(0,c) $$이므로:  $$ \beta_1=0 $$이다.  
 모델은:  
-$$ \hat y=0x_1+cx_2=cx_2 $$
+
+$$
+\hat y=0x_1+cx_2=cx_2
+$$
+
 가 되어 $x_1$을 사용하지 않는다.  (해당 원리가 Lasso 의 Feature selection 기능이다)
 
 Lasso와 Ridge의 차이  
@@ -866,12 +924,20 @@ Lasso의 마름모는 꼭짓점이 축 위에 있다.
 $$ \beta_j=0 $$인 해가 잘 만들어진다.  
 즉, Lasso는 feature selection을 수행한다.  
 Ridge의 원은 매끄럽고 꼭짓점이 없다. 따라서 보통 축에서 약간 떨어진 곳에 접한다.예를 들어: $$ (\beta_1,\beta_2)=(0.05,0.8) $$처럼 $\beta_1$이 매우 작아질 수는 있지만 보통 정확히 0이 되지는 않는다.  
-$$ \boxed{\text{Lasso: 일부 가중치를 0으로}} $$
-$$ \boxed{\text{Ridge: 모든 가중치를 작게 축소}} $$
+
+$$
+\boxed{\text{Lasso: 일부 가중치를 0으로}}
+$$
+
+$$
+\boxed{\text{Ridge: 모든 가중치를 작게 축소}}
+$$
+
 So-what?     
 이제 이 각 요소를 하나로 묶어 스토리로 이해하면 된다  
 
 > 그래프의 점 하나는 하나의 가중치 조합, 즉 하나의 모델이다. 빨간 타원은 같은 훈련오차를 만드는 모델들을 연결한 등고선이고, 그 중심은 훈련오차가 가장 작은 OLS 해이다. 하지만 OLS는 훈련오차만 최소화하므로, multicollinearity나 데이터 부족 상황에서는 큰 가중치를 가진 불안정한 해를 선택할 수 있다. Ridge와 Lasso는 이를 막기 위해 목적함수에 가중치 크기에 대한 벌점을 추가한다. 이 벌점을 제약식으로 표현하면 Ridge는 원(제곱), Lasso는 마름모(절댓값) 형태의 허용 영역이 된다. OLS 해가 이 영역 밖에 있다면, 영역 안에서 RSS가 가장 작은 지점인 빨간 타원과 도형의 최초 접점을 선택한다. Ridge의 L2 벌점을 미분하면 $X^\top X+\lambda I$가 나타나며, 이는 가중치를 축소하는 동시에 행렬을 invertible하게 만든다. Lasso의 L1 제약은 마름모의 꼭짓점이 축 위에 있으므로 일부 가중치를 정확히 0으로 만들기 쉽다. 결국 훈련오차를 약간 희생하는 대신 모델을 안정화하고 새로운 데이터에서의 오차를 줄이는 것이 목적이다.  
+
 ### Bias-Variance trade-off 와 double descent
 
 ![[Pasted image 20260822154015.png|439]]
@@ -971,6 +1037,7 @@ $\lambda$가 너무 크면 모델에게 사용할 수 있는 풀이 방법을 �
 결국 적절한 $\lambda$를 찾는다는 것은, 문제집의 답을 외우는 것과 문제의 원리를 이해하는 것 사이에서 가장 적절한 지점을 찾는 일이다.
 
 #### Bias Variance decomposition
+
 ![[Pasted image 20260823004807.png|363]]
 
 그럼 결국 적절함이란 추상적인 개념을 판단하는 문제로 넘어가게 된다.

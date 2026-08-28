@@ -5,7 +5,6 @@ publish: true
 aliases:
   - 'Blog/데이터 공부/통계/SLR, 단순선형회귀 이해하기'
 ---
-
 <https://nevermind22.tistory.com/35>
 
 [회귀분석 시작 전 꼭 알아야 할 개념과 흐름 TV 광고를 많이 하면 정말 매출이 오를까?지금 매출 데이터를 보면, 다음 달에는 얼마나 팔릴까?이런 질문들은 모두 하나의 공통된 갈증에서 시작된다.지금의 현상을 더 잘 이해하고, 앞으로를 nevermind22.tistory.com](https://nevermind22.tistory.com/35)
