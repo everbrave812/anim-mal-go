@@ -220,6 +220,7 @@ KKT 조건 4가지
  ① Primal feasibility
 원래 SVM 제약조건을 만족해야 한다.
 $$ 1-y_i(w^\top x_i+b)\leq0. $$
+
 ② Dual feasibility
 $$ \lambda_i\geq0. $$
 ③ Complementary slackness
