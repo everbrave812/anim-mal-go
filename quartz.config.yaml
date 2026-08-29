@@ -232,8 +232,7 @@ plugins:
   - source: "@quartz-community/footer"
     enabled: true
     options:
-      links:
-        아님말고: https://nevermind22.tistory.com/
+      links: {}
     layout:
       position: footer
       priority: 50

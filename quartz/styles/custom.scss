@@ -1,5 +1,18 @@
 @use "./variables.scss" as *;
 
+// 데스크톱 탐색기는 남은 사이드바 높이를 충분히 사용한다.
+@media all and ($desktop) {
+  .sidebar.left .explorer {
+    flex: 1 1 auto;
+    min-height: 30rem;
+  }
+
+  .sidebar.left .explorer-content {
+    flex: 1 1 auto;
+    max-height: none;
+  }
+}
+
 // 홈 소개 영역
 body[data-slug="index"] article > .markdown-preview-view > p:first-child img {
   display: block;
@@ -11,23 +24,16 @@ body[data-slug="index"] article > .markdown-preview-view > p:first-child img {
 }
 
 // 모든 글이 들어 있는 Blog 껍데기는 감추고 그 안의 분류부터 바로 보여준다.
-.explorer-ul
-  > li:has(> .folder-container[data-folderpath="blog/index" i])
-  > .folder-container {
+.explorer-ul > li:has(> .folder-container[data-folderpath="blog/index" i]) > .folder-container {
   display: none;
 }
 
-.explorer-ul
-  > li:has(> .folder-container[data-folderpath="blog/index" i])
-  > .folder-outer {
+.explorer-ul > li:has(> .folder-container[data-folderpath="blog/index" i]) > .folder-outer {
   visibility: visible;
   grid-template-rows: 1fr;
 }
 
-.explorer-ul
-  > li:has(> .folder-container[data-folderpath="blog/index" i])
-  > .folder-outer
-  > ul {
+.explorer-ul > li:has(> .folder-container[data-folderpath="blog/index" i]) > .folder-outer > ul {
   margin-left: 0;
   padding-left: 0;
   border-left: 0;
