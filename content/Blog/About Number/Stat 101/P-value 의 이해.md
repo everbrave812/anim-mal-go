@@ -5,11 +5,7 @@ publish: true
 aliases:
   - 'Blog/데이터 공부/통계/가설검정 - p-value로 통계적 의미를 해석하는 법'
 ---
-## Chapter 09. 가설검정 (Hypothesis Testing)
-
 ![](../../../Attachments/Tistory/33-01.png)
-
-우리의 만남의 p-value는 0.05보다 적어
 
 : 연구자가 내린 주장(가설)이 통계적으로 의미가 있는지를 판단하는 방법
 
