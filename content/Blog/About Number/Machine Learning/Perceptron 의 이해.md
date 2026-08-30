@@ -17,6 +17,8 @@ publish: true
 
 **퍼셉트론(1957)에서 트랜스포머 모델(2017)까지**, 길고 흥미로운 여정의 첫 발자국이다.
 
+(해당 글은 University of Melbourne, Statistical Machine Learning (COMP90051)의 5주차 2차시 수업내용을 기반으로 작성되었다)  
+
 ### Goal
 
 ### 목차
@@ -131,7 +133,7 @@ Perceptron loss는 convex이므로 local minimum이 존재한다면 global minim
 
 # SGD update : 퍼셉트론 최적화 방식
 
-![[Pasted image 20260830011207.png|301]]
+![[Pasted image 20260830011207.png|213]]
 
 Stochastic 방식은 전체 데이터를 한 번에 사용하지 않고 한 데이터 또는 작은 batch를 이용해 반복적으로 업데이트하는 방식이다. 퍼셉트론의 경우 데이터 포인트 하나하나 처리를 하기 때문에 batch 가 1 인 SGD 라고 볼수 있다. 
 
@@ -379,7 +381,7 @@ $$
 
 # 5. Kernel Perceptron
 
-![[Pasted image 20260830030355.png|481]]
+![[Pasted image 20260830030355.png|291]]
 
 배우면 써먹어야 한다. 앞서 말했듯 퍼셉트론은 비선형 문제를 해결하지 못한다. 그럼 비선형 문제를 해결할 수 있게 커널을 적용할 순 없을까? 
 
@@ -400,7 +402,7 @@ $$
 w^{(2)} = \eta y_1x_1+\eta y_7x_7.
 $$
 
-Sample 1을 다시 틀리면 $y_1x_1$이 한 번 더 들어가고
+Sample 1을 다시 틀리면 $y_1x_1$이 한 번 더 들어가고 (에포크 적용)
 
 $$
 w = 2\eta y_1x_1 +\eta y_7x_7 +\eta y_{29}x_{29}.
