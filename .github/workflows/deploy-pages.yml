@@ -1,4 +1,4 @@
-name: Deploy 아님말고
+name: Check and deploy 아님말고
 
 on:
   push:
@@ -35,6 +35,18 @@ jobs:
 
       - name: Install Quartz plugins
         run: npx quartz plugin install
+
+      - name: Check types
+        run: npx tsc --noEmit
+
+      - name: Check blog configuration formatting
+        run: npx prettier quartz.config.yaml quartz.ts quartz/styles/custom.scss --check
+
+      - name: Run tests
+        run: npm test
+
+      - name: Audit production dependencies
+        run: npm audit --omit=dev --audit-level=high
 
       - name: Build Quartz
         run: npx quartz build
