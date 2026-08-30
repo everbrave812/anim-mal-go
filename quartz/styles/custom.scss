@@ -44,6 +44,27 @@ body[data-slug="index"] article > .markdown-preview-view > p:first-child img {
   border-left: 0;
 }
 
+// Blog 바로 아래의 세 분류만 기본으로 펼치고, 그 안의 하위 폴더는 접어 둔다.
+.explorer-ul
+  > li:has(> .folder-container[data-folderpath="blog/index" i])
+  > .folder-outer
+  > ul
+  > li
+  > .folder-outer {
+  visibility: visible;
+  grid-template-rows: 1fr;
+}
+
+.explorer-ul
+  > li:has(> .folder-container[data-folderpath="blog/index" i])
+  > .folder-outer
+  > ul
+  > li:has(> .folder-outer)
+  > .folder-container
+  > svg {
+  transform: rotate(0deg);
+}
+
 // 기술 글 본문: 한글 행 길이와 수식 블록을 읽기 편하게 유지한다.
 body:not([data-slug="index"]) .center > article {
   max-width: 760px;
