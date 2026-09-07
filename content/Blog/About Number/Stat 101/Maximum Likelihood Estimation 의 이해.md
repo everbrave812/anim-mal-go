@@ -244,4 +244,4 @@ MLE 는 무궁무진하게 활용할수 있다.
 ## 관련 글
 
 - [[추정이란 무엇인가 — 통계적 추론의 첫걸음]]
-- [[Ridge, Lasso와 Overfitting]]
+- [[Blog/About Number/Machine Learning/Ridge, Lasso의 이해, Overfitting과 함께|Ridge, Lasso와 Overfitting]]

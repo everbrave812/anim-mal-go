@@ -143,6 +143,6 @@ Measurement Model은 **관측된 데이터가 어떤 확률 분포를 따른다�
 
 ## 관련 글
 
-- [[“평균이 48.3%입니다”가 전부가 아닌 이유]]
+- [[Blog/About Number/Stat 101/Interval estimate 의 이해|“평균이 48.3%입니다”가 전부가 아닌 이유]]
 - [[가설검정 - p-value로 통계적 의미를 해석하는 법]]
-- [[MLE는 신이에요]]
+- [[Blog/About Number/Stat 101/Maximum Likelihood Estimation 의 이해|MLE는 신이에요]]

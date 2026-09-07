@@ -1027,7 +1027,7 @@ $$
 ## 관련 글
 
 <!-- AUTO-RELATED:START -->
-- [[PCA 이해하기]]
-- [[Ridge, Lasso와 Overfitting]]
-- [[MLE는 신이에요]]
+- [[Blog/About Number/Machine Learning/PCA 이론의 이해|PCA 이해하기]]
+- [[Blog/About Number/Machine Learning/Ridge, Lasso의 이해, Overfitting과 함께|Ridge, Lasso와 Overfitting]]
+- [[Blog/About Number/Stat 101/Maximum Likelihood Estimation 의 이해|MLE는 신이에요]]
 <!-- AUTO-RELATED:END -->

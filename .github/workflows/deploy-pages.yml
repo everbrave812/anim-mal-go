@@ -51,6 +51,9 @@ jobs:
       - name: Build Quartz
         run: npx quartz build
 
+      - name: Check internal links and math rendering
+        run: node scripts/check-site.mjs
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 

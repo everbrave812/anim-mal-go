@@ -590,7 +590,7 @@ PCA는 고차원 데이터를 무작정 삭제하는 방법이 아니다. 데이
 ## 관련 글
 
 <!-- AUTO-RELATED:START -->
-- [[Ridge, Lasso와 Overfitting]]
-- [[MLE는 신이에요]]
-- [[SLR, 단순선형회귀 이해하기]]
+- [[Blog/About Number/Machine Learning/Ridge, Lasso의 이해, Overfitting과 함께|Ridge, Lasso와 Overfitting]]
+- [[Blog/About Number/Stat 101/Maximum Likelihood Estimation 의 이해|MLE는 신이에요]]
+- [[Blog/About Number/Regression, Econometric/SLR, 단순선형회귀 이해하기|SLR, 단순선형회귀 이해하기]]
 <!-- AUTO-RELATED:END -->

@@ -1410,7 +1410,7 @@ $$
 
 ## 관련 글
 
-- [[회귀분석 시작 전 꼭 알아야 할 개념과 흐름]]
-- [[SLR, 단순선형회귀 이해하기]]
-- [[회귀분석의 가정]]
-- [[MLE는 신이에요]]
+- [[Blog/About Number/Regression, Econometric/회귀분석 시작 전 꼭 알아야 할 개념과 흐름|회귀분석 시작 전 꼭 알아야 할 개념과 흐름]]
+- [[Blog/About Number/Regression, Econometric/SLR, 단순선형회귀 이해하기|SLR, 단순선형회귀 이해하기]]
+- [[Blog/About Number/Regression, Econometric/회귀분석의 가정|회귀분석의 가정]]
+- [[Blog/About Number/Stat 101/Maximum Likelihood Estimation 의 이해|MLE는 신이에요]]

@@ -224,6 +224,6 @@ x0라는 특정 값에서 **평균적으로 기대되는 반응값 μ0​을 �
 
 ## 관련 글
 
-- [[회귀분석 시작 전 꼭 알아야 할 개념과 흐름]]
-- [[회귀분석의 가정]]
-- [[Ridge, Lasso와 Overfitting]]
+- [[Blog/About Number/Regression, Econometric/회귀분석 시작 전 꼭 알아야 할 개념과 흐름|회귀분석 시작 전 꼭 알아야 할 개념과 흐름]]
+- [[Blog/About Number/Regression, Econometric/회귀분석의 가정|회귀분석의 가정]]
+- [[Blog/About Number/Machine Learning/Ridge, Lasso의 이해, Overfitting과 함께|Ridge, Lasso와 Overfitting]]
