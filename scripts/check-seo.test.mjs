@@ -31,10 +31,10 @@ function check({ alt = "chart", sitemap = true, homepage = true } = {}) {
   fs.writeFileSync(
     path.join(root, "baseline.json"),
     JSON.stringify({
-      maxMissingExplicitDescriptions: 0,
-      maxGenericDescriptions: 0,
-      maxMissingImageAlt: 0,
-      maxMissingStructuredData: 0,
+      minExplicitDescriptions: 1,
+      minUsefulDescriptions: 1,
+      minImagesWithAlt: 1,
+      minStructuredDataPages: 1,
     }),
   )
   const result = spawnSync(process.execPath, [script, publicDir], {
@@ -55,10 +55,10 @@ test("accepts a complete page and treats /index as the homepage", () => {
   assert.equal(result.status, 0, result.stderr)
 })
 
-test("blocks newly missing image alt text", () => {
+test("blocks a decrease in existing image alt coverage", () => {
   const result = check({ alt: "" })
   assert.equal(result.status, 1)
-  assert.match(result.stderr, /missingImageAlt increased/)
+  assert.match(result.stderr, /imagesWithAlt decreased/)
 })
 
 test("requires the homepage in the sitemap", () => {

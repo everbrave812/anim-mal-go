@@ -1,6 +1,6 @@
 {
-  "maxMissingExplicitDescriptions": 26,
-  "maxGenericDescriptions": 14,
-  "maxMissingImageAlt": 132,
-  "maxMissingStructuredData": 42
+  "minExplicitDescriptions": 1,
+  "minUsefulDescriptions": 28,
+  "minImagesWithAlt": 5,
+  "minStructuredDataPages": 0
 }

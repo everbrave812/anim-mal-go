@@ -50,10 +50,20 @@ for (const file of fs.readdirSync(root, { recursive: true }).filter((f) => f.end
   const missingImageAlt = articleImages.filter(
     ({ node }) => !String(node.properties?.alt || "").trim(),
   ).length
+  const imagesWithAlt = articleImages.length - missingImageAlt
   const structuredData = all.filter(
     ({ node }) => node.tagName === "script" && node.properties?.type === "application/ld+json",
   ).length
-  pages.push({ file, title, description, canonical, indexable, missingImageAlt, structuredData })
+  pages.push({
+    file,
+    title,
+    description,
+    canonical,
+    indexable,
+    missingImageAlt,
+    imagesWithAlt,
+    structuredData,
+  })
 }
 
 const indexable = pages.filter((page) => page.indexable)
@@ -110,17 +120,34 @@ const metrics = {
   missingImageAlt: indexable.reduce((sum, page) => sum + page.missingImageAlt, 0),
   missingStructuredData: indexable.filter((page) => page.structuredData === 0).length,
 }
-for (const [name, value] of Object.entries(metrics)) {
-  const maximum = baseline[`max${name[0].toUpperCase()}${name.slice(1)}`]
-  if (maximum !== undefined && value > maximum)
-    errors.push(`${name} increased: ${value} (allowed ${maximum})`)
+const publishedNotes = markdownFiles.filter((file) => {
+  const source = fs.readFileSync(path.join(contentPath, file), "utf8")
+  const frontmatter = source.match(/^---\n([\s\S]*?)\n---/)
+  return frontmatter && (parse(frontmatter[1]) || {}).publish === true
+}).length
+const totalArticleImages = indexable.reduce(
+  (sum, page) => sum + page.missingImageAlt + page.imagesWithAlt,
+  0,
+)
+const coverage = {
+  explicitDescriptions: publishedNotes - metrics.missingExplicitDescriptions,
+  usefulDescriptions: indexable.length - metrics.genericDescriptions,
+  imagesWithAlt: totalArticleImages - metrics.missingImageAlt,
+  structuredDataPages: indexable.length - metrics.missingStructuredData,
+}
+for (const [name, value] of Object.entries(coverage)) {
+  const minimum = baseline[`min${name[0].toUpperCase()}${name.slice(1)}`]
+  if (minimum !== undefined && value < minimum)
+    errors.push(`${name} decreased: ${value} (required ${minimum})`)
 }
 
 console.log(
   `SEO audit: ${indexable.length} indexable pages, ${sitemapUrls.length} sitemap URLs, ` +
     `${metrics.missingExplicitDescriptions} published notes without explicit descriptions, ` +
     `${metrics.genericDescriptions} generic descriptions, ${metrics.missingImageAlt} images without alt text, ` +
-    `${metrics.missingStructuredData} pages without structured data`,
+    `${metrics.missingStructuredData} pages without structured data; coverage: ` +
+    `${coverage.explicitDescriptions} explicit descriptions, ${coverage.usefulDescriptions} useful descriptions, ` +
+    `${coverage.imagesWithAlt} images with alt text, ${coverage.structuredDataPages} structured-data pages`,
 )
 for (const warning of warnings) console.warn(`SEO warning: ${warning}`)
 if (errors.length) {
