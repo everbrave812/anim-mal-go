@@ -54,6 +54,9 @@ jobs:
       - name: Check internal links and math rendering
         run: node scripts/check-site.mjs
 
+      - name: Check SEO regressions
+        run: node scripts/check-seo.mjs
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
