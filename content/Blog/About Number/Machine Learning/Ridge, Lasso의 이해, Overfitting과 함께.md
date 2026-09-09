@@ -1,5 +1,6 @@
 ---
 title: Ridge, Lasso의 이해, Overfitting과 함께
+description: "선형회귀에서 다중공선성이나 많은 변수로 해가 유일하지 않게 되는 문제를 살펴본다. 행렬 예제와 목적함수를 통해 Ridge의 L2 규제와 Lasso의 L1 규제가 가중치에 벌점을 주는 방식을 설명한다."
 date: 2026-08-23
 publish: true
 ---

@@ -1,5 +1,6 @@
 ---
 title: point estimate 의 이해
+description: "표본으로 모집단의 특성을 추정하는 통계적 추론의 기본 아이디어를 설명한다. 추정량과 추정값의 차이, 불확실성을 함께 보고하는 이유, 확률분포를 가정하는 측정 모형의 역할을 살펴본다."
 date: 2025-07-02
 publish: true
 aliases:

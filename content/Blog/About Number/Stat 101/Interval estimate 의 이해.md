@@ -1,5 +1,6 @@
 ---
 title: interval estimate 의 이해
+description: "점추정만으로 표현하기 어려운 불확실성을 신뢰구간으로 나타내는 방법을 설명한다. 표준오차와 반복 표본추출을 통해 95% 신뢰수준의 의미를 살펴보고 출구조사의 오차범위 해석에 연결한다."
 date: 2025-07-02
 publish: true
 aliases:

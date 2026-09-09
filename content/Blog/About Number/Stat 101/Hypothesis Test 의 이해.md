@@ -1,5 +1,6 @@
 ---
 title: Hypothesis Test 의 이해
+description: "평균과 비율, 범주형 자료를 비교할 때 사용하는 가설검정의 조건과 적용 상황을 정리한다. 독립표본과 대응표본 t-검정, 윌콕슨 검정, 카이제곱 검정의 절차를 예시로 살펴본다."
 date: 2025-07-05
 publish: true
 aliases:
